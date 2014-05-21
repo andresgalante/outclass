@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Outclass</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	
+	<!-- Bootstrap -->
+	<link href="less/outclass.css" rel="stylesheet" media="screen">
+
+
+
+    <!--  fav and touch icons -->
+    <link rel="shortcut icon" href="public/img/favicon.ico">
+    <link rel="apple-touch-icon" href="public/img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-touch-icon-144x144-precomposed.png">
+
+  </head>
+  <body>
+  
+<header>	
+	<a id="simple-menu" href="#"><i class="icon-chevron-left icon-2x"></i></a>
+
+	<h1>Bemvindo</h1>
+
+	<div class="main-menu">
+		<a href="inbox.html"><i class="icon-comments-alt icon-2x"></i><span class="badge">7</span></a>
+		<a href="settings.html"><i class="icon-cog icon-2x"></i></a>		
+	</div>
+</header>
+
+
+<nav>
+	<ul class="list-unstyled">
+		<li><a href="home.html"><i class="icon-home icon-2x"></i><span>home</span></a></li>
+		<li><a href="calendar.html"><i class="icon-calendar icon-2x"></i><span>calendario</span></a></li>
+		
+		<li class="active" id="report"><a href="#"><i class="icon-book icon-2x"></i><span>boletin</span></a></li>
+
+		<li><a href="rank.html"><i class="icon-trophy icon-2x"></i><span>leaderboard</span></a></li>
+		<li><a href="contacts.html"><i class="icon-envelope-alt icon-2x"></i><span>contatos</span></a></li>
+	</ul>
+</nav>
+
+
+<div class="materias navlist">
+	<ul class="list-unstyled">
+		<li><a href="matematica.html">Matemática <span>8.4</span></a></li>
+		<li><a href="biologia.html">Biologia <span>10</span></a></li>
+		<li><a href="#">Ingles <span>10</span></a></li>
+		<li><a href="#">Educação fisicia <span>6</span></a></li>
+		<li><a href="#">Quimica <span>7.7</span></a></li>
+		<li><a href="#">Fisica <span>9</span></a></li>
+		<li><a href="#">Artes <span>9.6</span></a></li>
+		<li><a href="#">Historia <span>8</span></a></li>
+		<li><a href="#">Literatura <span>7.8</span></a></li>
+	</ul>
+</div>
+
+
+
+<div class="container">
+
+
+<div class="regular-text">
+
+<h3>Prova de Matematicas</h3>
+<h6><i class="icon-calendar"> 23 Maio as 10:00</i></h6>
+<p>
+<div class="btn-group">
+	<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+		<i class="icon-bell-alt"></i> Alarme <span class="caret"></span>
+	</button>
+	
+	<ul class="dropdown-menu" role="menu">
+		<li><a href="#">Na hora da prova</a></li>
+		<li><a href="#">5 minutos antes</a></li>
+		<li><a href="#">30 minutos antes</a></li>
+		<li><a href="#">1 hora antes</a></li>
+		<li><a href="#">2 hora antes</a></li>
+		<li><a href="#">1 dia antes</a></li>
+		<li><a href="#">1 semana antes</a></li>
+	</ul>
+
+</div>
+</p>
+
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<ul>
+	<li>Ut enim ad minim veniam, quis nostrud exercitat</li>
+	<li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
+	<li>Ad minim veniam, quis nostrud exercitat</li>
+	<li>Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
+</ul>
+
+</div><!-- regular-text -->
+
+
+
+<div class="calendar">
+
+<h2 class="title-sub">Primer trismestre</h2>
+
+<table class="table table-bordered">
+
+<!--
+	<thead>
+        <tr>
+        	<th><i class="icon-time"> Hora</th>
+        	<th><i class="icon-book"> Materia</th>
+        </tr>
+	</thead>
+-->	
+	<tbody>
+		<tr>
+			<td><i class="icon-time"> 9:30</td>
+			<td>Matemática <span class="label label-warning">Prueba</span></td>
+		</tr>
+
+		<tr>
+			<td><i class="icon-time"> 11:00</td>
+			<td>Geografia</td>
+		</tr>
+
+		<tr>
+			<td><i class="icon-time"> 13:00</td>
+			<td>Historia</td>
+		</tr>
+
+
+		<tr>
+			<td><i class="icon-calendar"> 23 Maio</td>
+			<td class="summary">
+				<strong>7.8</strong>
+				<span class="label label-warning">8 media da turma</span>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+
+
+
+
+
+
+
+<table class="table table-bordered full-calendar">
+    <colgroup>
+        <col span="6">
+        <col class="sunday">
+    </colgroup>
+
+    <thead>
+        <tr>
+        	<th><a href="#"><i class="icon-chevron-left"></i></a></th>
+        	<th colspan="5">Set 2013</th>
+        	<th><a href="#"><i class="icon-chevron-right"></i></a></th>
+        </tr>
+     </thead>
+   
+    <tbody>
+        <tr class="table-header">
+        	<td>S</td>
+        	<td>T</td>
+        	<td>C</td>
+        	<td>Q</td>
+        	<td>S</td>
+        	<td>S</td>
+        	<td>D</td>
+        </tr>
+
+        <tr>
+        	<td><a href="#">29</a></td>
+        	<td><a href="#">30</a></td>
+        	<td><a href="#">1</a></td>
+        	<td><a href="#">2</a></td>
+        	<td><a href="#">3</a></td>
+        	<td><a href="#">4</a></td>
+        	<td><a href="#">5</a></td>
+        </tr>
+
+        <tr>
+        	<td><a href="#"><span class="label label-warning">6</span></a></td>
+        	<td><a href="#">7</a></td>
+        	<td><a href="#">8</a></td>
+        	<td><a href="#">9</a></td>
+        	<td><a href="#"><span class="label label-warning">10</span></a></td>
+        	<td><a href="#">11</a></td>
+        	<td><a href="#">12</a></td>
+        </tr>
+
+        <tr>
+        	<td><a href="#">13</a></td>
+        	<td><a href="#">15</a></td>
+        	<td><a href="#">16</a></td>
+        	<td><a href="#">17</a></td>
+        	<td><a href="#">18</a></td>
+        	<td><a href="#">19</a></td>
+        	<td><a href="#">20</a></td>
+        </tr>
+
+        <tr>
+        	<td><a href="#">21</a></td>
+        	<td><a href="#">22</a></td>
+        	<td><a href="#"><span class="label label-warning">23</span></a></td>
+        	<td><a href="#">24</a></td>
+        	<td><a href="#">25</a></td>
+        	<td><a href="#">26</a></td>
+        	<td><a href="#">27</a></td>
+        </tr>
+
+        <tr>
+        	<td><a href="#">28</a></td>
+        	<td><a href="#">29</a></td>
+        	<td><a href="#">30</a></td>
+        	<td><a href="#">31</a></td>
+        	<td><a href="#">1</a></td>
+        	<td><a href="#">2</a></td>
+        	<td><a href="#">3</a></td>
+        </tr>
+    
+    
+    </tbody>
+</table>
+
+
+
+
+
+</div><!-- calendar -->
+
+<div class="landing">
+
+<h1>Outclass</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+
+<p>
+	<button type="button" class="btn btn-primary btn-lg btn-block">Entrar</button>
+	<button type="button" class="btn btn-primary btn-lg btn-block">Criar uma conta</button>
+</p>
+
+<div class="panel panel-default">
+	<div class="panel-body">
+
+
+<form class="form-inline" role="form">
+
+	<div class="form-group">
+		<label class="sr-only" for="student-number">Student number</label>
+		<input type="number" class="form-control" id="student-number" placeholder="Numero de matricula">
+	</div>
+
+
+	<div class="form-group">
+		<label class="sr-only" for="email">Email address</label>
+		<input type="email" class="form-control" id="email" placeholder="Enter email">
+	</div>
+	
+	<div class="form-group">
+		<label class="sr-only" for="password">Password</label>
+		<input type="password" class="form-control" id="password" placeholder="Password">
+	</div>
+	
+	<div class="checkbox">
+		<label>
+		<input type="checkbox"> Remember me
+		</label>
+	</div>
+	
+	<button type="submit" class="btn btn-primary">Entrar</button>
+</form>
+
+
+	</div><!-- panel body -->
+</div><!-- panel -->
+
+</div>
+
+
+
+<ul>
+	<li>Landing page com: logo, texto, sign up e login</li>
+	
+	<li>Login: email e senha</li>
+
+	<li>sign up divido e dois pais ou alumno
+		<ol>
+			<li>Coloca numero de alumno</li>
+			<li>Confirmção e manda email</li>
+			<li>Pabanes escolhe senha e continuar</li>
+			<li>Se for pai diz como coneguir o convite</li>
+		</ol>
+	</li>
+
+</ul>
+
+
+
+<div class="settings">
+
+	<div class="navlist">
+		<ul class="list-unstyled">
+		    <li><label>Quero participar do leaderboard <input type="checkbox" checked="checked" /></label></li>
+		    <li><a href="#">Compartilhar Outclass com o pai</a></li>
+		    <li><a href="#">Ver anos anteriores</a></li>
+		    <li><a href="#"><i class="icon-off icon-large"></i> Logout</a></li>
+		    
+		</ul>
+	</div><!-- navlist -->
+
+
+
+<ul class="list-group list-nav">
+    <li class="list-group-item"><label>Quero participar do leaderboard <input type="checkbox" checked="checked" /></label></li>
+    <li class="list-group-item"><a href="#">Compartilhar Outclass com o pai</a></li>
+    <li class="list-group-item"><a href="#">Ver anos anteriores</a></li>
+    <li class="list-group-item"><a href="#"><i class="icon-off icon-large"></i> Logout</a></li>
+</ul>
+
+
+
+
+
+<form class="form-inline" role="form">
+	<div class="form-group">
+		<label class="sr-only" for="email">Email do pai</label>
+		<input type="email" class="form-control" id="email" placeholder="Enter email">
+	</div>
+	<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+<div class="contact-information">
+
+	<div class="vcard contact">
+		<div class="btn-group contact-info">
+		    <a class="btn btn-primary" href="#"><i class="icon-trash icon-large"></i></a>
+		</div><!-- contact-info -->			
+
+
+		<div class="contact-name">
+			<h3 class="fn">nomedopai@email.com</h3>
+		</div><!-- contact-name -->
+	</div><!-- contact -->
+
+	<div class="vcard contact">
+		<div class="btn-group contact-info">
+		    <a class="btn btn-primary" href="#"><i class="icon-trash icon-large"></i></a>
+		</div><!-- contact-info -->			
+
+
+		<div class="contact-name">
+			<h3 class="fn">nomedamae@email.com</h3>
+		</div><!-- contact-name -->
+	</div><!-- contact -->
+
+	<div class="vcard contact">
+		<div class="btn-group contact-info">
+		    <a class="btn btn-primary" href="#"><i class="icon-trash icon-large"></i></a>
+		</div><!-- contact-info -->			
+
+
+		<div class="contact-name">
+			<h3 class="fn">nomedatia@email.com</h3>
+		</div><!-- contact-name -->
+	</div><!-- contact -->
+
+
+</div><!-- contact information -->
+
+
+
+
+<h3>Ver anos anteriores</h3>
+
+<ul class="nav nav-pills nav-stacked">
+	<li class="active"><a href="#">2013</a></li>
+	<li><a href="#">2012</a></li>
+	<li><a href="#">2011</a></li>
+	<li><a href="#">2010</a></li>
+</ul>
+
+
+
+
+
+</div><!-- settings -->
+
+
+<div class="event-list">
+
+<h2 class="title-sub">Primer trismestre</h2>
+
+<div class="vevent">
+	<span class="dtstart"><i class="icon-calendar"></i> 27 Maio</span> 
+	<span class="summary">
+		<strong>7.8</strong>
+		/ 8 turma
+	</span>
+</div><!-- vevent -->
+
+<div class="vevent">
+	<span class="dtstart"><i class="icon-calendar"></i> 27 Maio</span> 
+	<span class="summary">
+		<strong>7.8</strong>
+		/ 8 turma
+	</span>
+</div><!-- vevent -->
+
+<div class="vevent">
+	<span class="dtstart"><i class="icon-calendar"></i> 27 Maio</span> 
+	<span class="summary">
+		<strong>7.8</strong>
+		/ 8 turma
+	</span>
+</div><!-- vevent -->
+
+<div class="vevent highlight">
+	<span class="dtstart"><i class="icon-calendar"></i> 27 Maio</span> 
+	<span class="summary">
+		<strong>7.8</strong>
+		/ 8 turma
+	</span>
+</div><!-- vevent -->
+
+
+
+
+
+</div><!-- score-history -->
+
+
+<div class="contact-information">
+
+	<div class="vcard contact">
+		<div class="btn-group contact-info">
+		    <a class="btn btn-primary" href="mailto:deweyfinn@schoolname.com"><i class="icon-envelope icon-large"></i></a>
+		    <a class="btn btn-primary" href="tel:554893873837"><i class="icon-phone icon-large"></i></a>
+		    <a class="btn btn-primary" href="tel:554893873837"><i class="icon-map-marker icon-large"></i></a>
+		</div><!-- contact-info -->			
+
+<!--		<div class="thumb"><img class="photo avatar-alt" src="images/thumb.jpg" height="50" width="50"/></div>thumb-->
+
+		<div class="contact-name">
+			<h3 class="fn">Nome do Profesor e sobrenome</h3>
+		</div><!-- contact-name -->
+	</div><!-- contact -->
+
+	<div class="vcard contact">
+		<div class="btn-group contact-info">
+		    <a class="btn btn-primary" href="mailto:deweyfinn@schoolname.com"><i class="icon-envelope icon-large"></i></a>
+		    <a class="btn btn-primary" href="tel:554893873837"><i class="icon-phone icon-large"></i></a>
+		    <a class="btn btn-primary" href="tel:554893873837"><i class="icon-map-marker icon-large"></i></a>
+		</div><!-- contact-info -->			
+
+		<div class="thumb"><img class="photo avatar-alt" src="images/thumb.jpg" height="50" width="50"/></div><!--thumb-->
+
+		<div class="contact-name">
+			<h3 class="fn">Dewey Finn</h3>
+		</div><!-- contact-name -->
+	</div><!-- contact -->
+
+	<div class="vcard contact">
+		<div class="btn-group contact-info">
+		    <a class="btn btn-primary" href="mailto:deweyfinn@schoolname.com"><i class="icon-envelope icon-large"></i></a>
+		    <a class="btn btn-primary" href="tel:554893873837"><i class="icon-phone icon-large"></i></a>
+		    <a class="btn btn-primary" href="tel:554893873837"><i class="icon-map-marker icon-large"></i></a>
+		</div><!-- contact-info -->			
+
+		<div class="thumb"><img class="photo avatar-alt" src="images/thumb.jpg" height="50" width="50"/></div><!--thumb-->
+
+		<div class="contact-name">
+			<h3 class="fn">Dewey Finn</h3>
+		</div><!-- contact-name -->
+	</div><!-- contact -->
+
+
+</div><!-- contact information -->
+
+
+
+<div class="leaderboard">
+
+	<h2 class="title-sub">Media geral</h2>
+	<ol class="list-unstyled">
+		<li>
+			<span class="rank">#<strong>1</strong></span>
+			<span class="user">
+				Antonio Gonzaga
+			</span><!-- user -->
+			<span class="average">9.7</span>		
+		</li>
+		
+		<li>
+			<span class="rank">#<strong>2</strong></span>
+			<span class="user">
+				Marcos Buson
+			</span><!-- user -->
+			<span class="average">9.6</span>		
+		</li>
+	
+		<li>
+			<span class="rank">#<strong>3</strong></span>
+			<span class="user">
+				<img class="avatar-alt" src="images/thumb.jpg" alt="nome do profesor"  height="50" width="50">
+				Alice Ferreira
+			</span><!-- user -->
+			<span class="average">9.2</span>		
+		</li>
+	
+		<li class="me">
+			<span class="rank">#<strong>8</strong></span>
+			<span class="user">
+				<img class="avatar-alt" src="images/thumb.jpg" alt="nome do profesor"  height="50" width="50">
+				Lionel Messi
+			</span><!-- user -->
+			<span class="average">8.7</span>		
+		</li>
+	
+	</ol>
+	
+</div><!-- leaderboard -->
+
+
+
+
+
+
+<div class="student-score">
+	
+	<div class="indicator"><i class="icon-smile"></i></div>
+	
+	<div class="progress  my-score">
+		<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 84%;">
+			<span>8.4 <small>sua media</small></span>
+		</div>
+	</div>
+
+
+	<div class="progress">
+		<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 76%;">
+			<span>7.6 <small>media da turma</small></span>
+		</div>
+	</div>
+
+</div><!-- student score -->
+
+	
+	<div class="row info-box">
+		
+		<div class="col-xs-4">
+			<a href="#">
+				<p><strong>3</strong>/6</p>
+				<h6>Faltas</h6>
+			</a>
+		</div><!-- col -->
+		
+		<div class="col-xs-4">
+			<a href="rank.html">
+				<p><strong>7</strong>/30</p>
+				<h6>Leaderboard</h6>
+			</a>
+		</div><!-- col -->
+		
+		<div class="col-xs-4">
+			<a href="#">
+				<p><strong>3</strong> Maio</p>
+				<h6>prova</h6>
+			</a>
+		</div><!-- col -->
+		
+	</div><!-- row -->
+	
+	
+	<div class="media-stream main-feed">	
+	
+		 <div class="media new">
+		 
+		 	<div class="updated">
+		 		<i class="icon-time"></i>
+		 		20 mins ago
+		 	</div>
+		 	
+		 	<a class="pull-left" href="#">
+		 		<div class="avatar-icon">
+		 			<i class="icon-calendar icon-2x"></i>
+		 		</div>
+		 	</a>
+		 	
+		 	<div class="media-body">
+		 		<h4 class="media-heading">Matemática</h4>
+		 		<p>Você tirou 8 na prova no dia 2/3. A media da turma foi 7.</p>
+		 	</div><!-- media-body -->
+		 </div><!-- media -->		
+		 
+		 <!-- =================================================================== -->
+
+
+
+		 <div class="media">
+		 
+		 	<div class="updated">
+		 		<i class="icon-time"></i>
+		 		3 days ago
+		 	</div>
+		 	
+		 	<a class="pull-left" href="#">
+		 		<img class="media-object avatar" src="images/thumb.jpg" alt="nome do profesor"  height="50" width="50">
+		 	</a>
+		 	
+		 	<div class="media-body">
+		 		<h4 class="media-heading">Matemática</h4>
+		 		<p>Começa estudar! tem uma prova no dia 2/3.</p>
+		 	</div><!-- media-body -->
+		 </div><!-- media -->		
+		 
+		 <!-- =================================================================== -->
+
+
+		 <div class="media">
+		 
+		 	<div class="updated">
+		 		<i class="icon-time"></i>
+		 		24 Jul
+		 	</div>
+		 	
+		 	<a class="pull-left" href="#">
+		 		<img class="media-object avatar" src="images/thumb.jpg" alt="nome do profesor"  height="50" width="50">
+		 	</a>
+		 	
+		 	<div class="media-body">
+		 		<h4 class="media-heading">Matemática</h4>
+		 		<p>Esta quinta vamos fazer um trabalho pratico especial, lembrem de trazer seus computadores.</p>
+		 	</div><!-- media-body -->
+		 </div><!-- media -->		
+		 
+		 <!-- =================================================================== -->
+		 
+
+	
+		 <div class="media">
+		 
+		 	<div class="updated">
+		 		<i class="icon-time"></i>
+		 		10 Jul
+		 	</div>
+		 	
+		 	<a class="pull-left" href="#">
+		 		<img class="media-object avatar" src="images/thumb.jpg" alt="nome do profesor"  height="50" width="50">
+		 	</a>
+		 	
+		 	<div class="media-body">
+		 		<h4 class="media-heading">Matemática</h4>
+		 		<p>Você é um genio! Chegou no 3ro no leaderboard de mátematicas!</p>
+		 	</div><!-- media-body -->
+		 </div><!-- media -->		
+		 
+		 <!-- =================================================================== -->
+		 
+	
+	
+		 <div class="media">
+		 
+		 	<div class="updated">
+		 		<i class="icon-time"></i>
+		 		20 Maio
+		 	</div>
+		 	
+		 	<a class="pull-left" href="#">
+		 		<img class="media-object avatar" src="images/thumb.jpg" alt="nome do profesor"  height="50" width="50">
+		 	</a>
+		 	
+		 	<div class="media-body">
+		 		<h4 class="media-heading">Matemática</h4>
+		 		<p>Você tirou 7 na prova no dia 2/3. Sua media agora é 6,8.</p>
+		 	</div><!-- media-body -->
+		 </div><!-- media -->		
+		 
+		 <!-- =================================================================== -->
+
+
+
+		 <div class="media">
+		 
+		 	<div class="updated">
+		 		<i class="icon-time"></i>
+		 		15 Maio
+		 	</div>
+		 	
+		 	<a class="pull-left" href="#">
+		 		<img class="media-object avatar" src="images/thumb.jpg" alt="nome do profesor"  height="50" width="50">
+		 	</a>
+		 	
+		 	<div class="media-body">
+		 		<h4 class="media-heading">Matemática</h4>
+		 		<p>Começa estudar! tem uma prova no dia 2/3.</p>
+		 	</div><!-- media-body -->
+		 </div><!-- media -->		
+		 
+		 <!-- =================================================================== -->
+	
+	</div><!-- media feed -->
+	
+	<div class="vcard contact teacher alt">
+		
+		<div class="btn-group contact-info">
+		    <a type="button" class="btn btn-default" href="mailto:deweyfinn@schoolname.com"><i class="icon-envelope icon-large"></i></a>
+		    <a type="button" class="btn btn-default" href="tel:554893873837"><i class="icon-phone icon-large"></i></a>
+		</div>			
+
+		<div class="thumb"><img class="photo avatar-alt" src="images/thumb.jpg" height="50" width="50"/></div>
+
+		<div class="contact-name">
+			<h3 class="fn">Dewey Finn</h3>
+		</div>
+
+	</div><!-- teacher -->
+
+</div><!-- conainer -->
+
+
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="js/jquery.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+
+
+	<script type="text/javascript"
+	  src="https://maps.googleapis.com/maps/api/js?sensor=false&key=AIzaSyDdzYCJYhNRPYBSDyeQZJO-7I6orMG-od8">
+	</script>
+	
+<script>
+$("#report a").click(function() {
+  $(".materias").slideToggle();
+});
+
+
+$(document).ready(function() {
+ var mapOptions = {
+	zoom: 14,
+	center: new google.maps.LatLng(-27.46026, -48.42011),
+	mapTypeId: google.maps.MapTypeId.ROADMAP
+  }
+  var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+});
+
+</script>
+		
+   
+	
+	</body>
+</html>

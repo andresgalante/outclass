@@ -1,0 +1,882 @@
+/*!
+ * Based on Bootstrap v3.0.0 
+ */
+
+// Core
+
+@import "bootstrap.less";
+
+
+// Variables
+@headings-font-weight:    400;
+@text-color:	@outclass-text-color;
+
+
+/*
+	@outclass-blue: #00afd1;
+	@outclass-green: #1fbba6;
+	@outclass-yellow: #bbb91f;
+	@outclass-orange: #f27935;
+	@outclass-orange-dark: darken(@outclass-orange, 20%);
+*/
+
+@outclass-gray-lighter: lighten(@outclass-gray-light, 10%);;
+@outclass-gray-light: lighten(@outclass-gray, 10%);;
+@outclass-gray: lighten(@outclass-gray-dark, 40%);
+@outclass-gray-dark: #343838;
+
+
+@outclass-blue-dark: #005F6B;
+@outclass-blue: #008C9E;
+@outclass-blue-light: #00B4CC;
+@outclass-blue-lighter: #00DFFC;
+
+
+
+
+@outclass-text-color: rgba(0,0,0,.7);
+@outclass-text-color-muted: rgba(0,0,0,.5);
+
+
+@btn-default-color:              @outclass-blue-dark;
+@btn-default-bg:                 @outclass-blue;
+@btn-default-border:             @outclass-blue-dark;
+
+
+//@outclass-blue: #69d2e7;
+//@outclass-green: #e0e4cc;
+//@outclass-yellow: #a7dbd8;
+
+@outclass-orange: #f27935;
+@outclass-orange-dark: darken(@outclass-orange, 20%);
+
+
+//z-index levels
+
+@zindex-header:				2090;
+@zindex-teacher:            2070;
+@zindex-score:           	2060;
+@zindex-nav:            	2090;
+@zindex-materias:           2080;
+
+
+
+@outclass-font-jumbo:	ceil(@font-size-base * 4);
+@outclass-font-xlarge:	ceil(@font-size-base * 1.5);
+@outclass-font-large:	ceil(@font-size-base * 1.25);
+@outclass-font-small:	ceil(@font-size-base * .8);
+
+
+
+
+strong{font-weight: 700;}
+.navbar-brand{font-weight: 400;}
+// Font
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+@font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
+body{
+	background: @outclass-gray-lighter url(../images/bg_noise.gif) repeat 0 0;
+	padding: 0 0 0px 0;
+	font-weight: 300;
+	margin: 50px 0 120px 0;
+}
+
+
+// HEADER ========================================
+
+header{
+	.clearfix();
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: @zindex-header;
+	color: @outclass-blue-lighter;
+	.box-shadow(0 3px 5px rgba(0,0,0,.2));
+	text-shadow: darken(@outclass-gray-dark, 20%) 0px -1.5px 0px;			
+	background: @outclass-gray-dark;
+	#gradient > .vertical(@outclass-gray-dark, darken(@outclass-gray-dark,10%));
+	
+	h1{
+		font-size: @outclass-font-xlarge;
+		line-height: 50px;
+		float: left;
+		margin: 0 0 0 0px;
+		padding-left: @grid-gutter-width/2;
+	}
+	
+	a{
+	    display: block;
+	    float: left;
+	    padding: 0 @grid-gutter-width/2;
+	    color: @outclass-gray-lighter;
+	    line-height: 42px;
+	    padding-top: 8px;
+	    border-left:1px solid @outclass-gray-dark;
+	    border-right:1px solid darken(@outclass-gray-dark,10%);
+	    
+	    &:hover{
+	    	color: @outclass-blue-lighter;
+	        text-decoration: none;
+	    }
+	}
+	
+	.main-menu{
+		float: right;
+		border-left:1px solid darken(@outclass-gray-dark,10%);
+		.clearfix();
+
+		a{
+			position: relative;
+		    &:last-child{border-right:none!important;}
+		}
+		
+		.badge{
+			background: red;
+			position: absolute;
+			top: 5px;
+			right: 5px;
+			.box-shadow(0 0 6px rgba(0,0,0,.9));
+//			font-size: @outclass-font-small;
+		}
+	
+	}
+	
+}
+
+// Teacher ====================
+
+.contact{
+	border-bottom: 1px solid @outclass-gray-lighter;
+	padding: @grid-gutter-width/4 @grid-gutter-width/2 @grid-gutter-width/4 @grid-gutter-width/4;
+	margin: 0 -@grid-gutter-width/2;
+	color: @outclass-text-color;
+	min-height: 50px;
+	.clearfix;
+
+	.thumb{
+		float: left;
+		margin-left: @grid-gutter-width/4;
+	}
+	
+	.contact-name{
+		margin-left: @grid-gutter-width/4;
+		float: left;
+//		background: red;
+//		display: inline-block;
+		h3{
+			margin: 0;
+			font-size: @font-size-base;
+			text-shadow: #fff 0px 1.5px 0px;
+			padding-top: 13px;
+//			height: 50px;
+//			background: yellow;
+		}
+	}
+	
+	.contact-info{
+		float: right;
+		padding: @grid-gutter-width/4 0;
+//		background: red;
+	}
+
+
+	&.alt{
+		background: @outclass-blue-dark;
+		.box-shadow(inset 0 0 10px darken(@outclass-blue-dark, 25%));
+		color: @outclass-blue-lighter;
+		
+		.contact-name{h3{text-shadow: #000 0px -1.5px 0px;}}	
+
+	}//alt
+
+	&.teacher{
+		border: none;
+		margin: 0;
+		position: fixed;
+		bottom: 50px;
+		left: 0;
+		right: 0;
+		z-index: @zindex-teacher;
+			h3{
+				font-size: @outclass-font-large
+			}
+	}//teacher
+
+}
+
+
+
+
+// avatar ===========================================================
+.avatar{
+	.img-rounded;
+}
+
+.avatar-alt{
+	.img-circle;
+}
+
+
+
+
+
+
+// Main FEED ====================================================
+
+.main-feed{
+	margin-bottom: 0px;
+
+	.media{
+		position: relative;
+		margin: 0 -@grid-gutter-width / 2;
+		padding: 8px @grid-gutter-width / 2;
+		border-bottom: 1px solid @outclass-gray-lighter;
+		
+		&.new{
+			background: @state-warning-bg;
+			border-bottom: 1px solid @state-warning-border;
+			h4{
+			    color: @state-warning-text;
+			    text-shadow: #fff 0px 1.5px 0px;
+			    }//h4		
+		}//new
+	}//media
+		
+	.avatar-icon{
+		#gradient > .vertical(@outclass-blue-lighter, darken(@outclass-blue-lighter, 15%));
+		text-shadow: @outclass-blue-lighter 0px 1.5px 0px;
+		color: @outclass-blue-dark;
+		width: 50px;
+		text-align: center;
+		.border-radius(@border-radius-large);
+		i{
+			line-height: 50px;
+			display: block;
+		}
+	}
+	
+	.updated{
+			position: absolute;
+			top:5px;
+			right: @grid-gutter-width / 2;
+			font-size:  @outclass-font-small;
+			color: @outclass-text-color-muted;
+	}
+	
+	.media-body{
+		h4{
+			font-size: @font-size-base;
+			text-shadow: #fff 0px 1.5px 0px;
+			}		
+
+		p{margin: 0;}
+	}
+}
+
+
+
+
+// h2 small-title ====================================================
+
+	.title-sub{
+		margin: 0;
+		padding: 0 @grid-gutter-width / 2;
+		line-height: 30px;
+		text-transform: uppercase; 
+		color: #fff;
+		background: @outclass-gray-dark;
+		font-size:  @font-size-base;
+		font-weight: 700;
+		text-shadow: darken(@outclass-blue-dark, 20%) 0px -1.5px 0px;			
+	}
+
+
+
+
+// event list ====================================================
+
+// .event-list{
+////	margin: 0 -@grid-gutter-width/2 20px -@grid-gutter-width/2;
+////	.box-shadow(0 3px 5px rgba(0,0,0,.2));
+////	
+////	.vevent{
+////		border-bottom: 1px solid @outclass-gray-lighter;
+////		.clearfix;
+//		background: red;
+//		padding: 10px @grid-gutter-width / 2;
+//	}
+//	
+//	
+//	.dtstart{
+//		border-right: 1px solid lighten(@outclass-gray-lighter, 10%);
+//		background: #fff;
+//		line-height: 50px;
+//		padding: 0 0 0 @grid-gutter-width / 2;
+//		width: 30%;
+//		display: inline-block;
+//		float: left;		
+//	}
+//	
+//	
+//	.summary{
+//		font-size:  @outclass-font-small;
+//		margin: 0 @grid-gutter-width / 2;
+//		float: left;
+//		background: yellow;
+////		display: block;
+////		line-height: 47px;
+////		display: inline-block;
+////		strong{font-size:  @outclass-font-large;}
+//		background: red;
+//	}
+//
+//	.highlight{
+//		background: @outclass-blue-light;
+//		.summary{color: #fff;text-shadow: @outclass-gray-dark 0px -1.5px 0px;	
+//}
+//	}
+//} //.event-list
+
+// Leaderboard ====================================================
+
+.leaderboard{
+//	background: red;
+	margin: 0 -@grid-gutter-width/2 20px -@grid-gutter-width/2;
+//	font-size:  @outclass-font-large;
+	.box-shadow(0 3px 5px rgba(0,0,0,.2));
+	
+
+	ol{
+		margin: 0;
+	}
+
+	li{
+//		padding: 8px @grid-gutter-width / 2;
+		border-bottom: 1px solid @outclass-gray-lighter;
+		.clearfix;
+		&.me{
+			background: @outclass-blue-light;
+			color: #fff;
+			text-shadow: @outclass-gray-dark 0px -1.5px 0px;	
+		}
+	}
+	
+	.rank, .average{
+		line-height: 60px;
+		padding: 0 @grid-gutter-width / 2;
+	}
+	.rank{
+		.box-shadow(inset 0 0 10px darken(@outclass-blue-dark, 25%));
+		background: @outclass-blue-dark;
+		color: @outclass-blue-lighter;
+//		text-shadow: 0px -1.5px 0px #000;			
+		display: block;
+		float: left;
+		strong{font-weight: 700;}
+	}
+	
+	.user{
+		margin:5px 0 5px 10px;
+		line-height: 50px;
+		display: inline-block;
+		font-weight: 400;
+		img{
+			margin-right: 5px;
+		}
+	}
+	
+	.average{
+		float: right;
+		color: @outclass-text-color-muted;
+		text-shadow: none;
+	}
+
+}
+
+// Alt progress bar ====================================================
+
+
+.student-score{
+	// Outer container
+	position:relative;
+	display: block;
+	&:hover{
+		text-decoration: none;
+		}
+
+	.progress {
+	margin-bottom: 0; //overwrite styles
+	.box-shadow(none);//overwrite styles
+	border-radius: 0;//overwrite styles	
+	height: @line-height-computed*2;
+	margin-left:-@grid-gutter-width / 2;
+	margin-right:-@grid-gutter-width / 2;
+
+	background-color: @outclass-gray;
+	.box-shadow(0 3px 5px rgba(0,0,0,.2));
+	z-index: @zindex-score;
+	position: relative;
+	
+	&.my-score{
+		background: @outclass-gray-light;
+		height: @line-height-computed*4;
+		.box-shadow(0 3px 5px rgba(0,0,0,.2));
+		z-index: 99;
+		position: relative;
+		.progress-bar {
+			background-color: @outclass-blue;
+//			#gradient > .vertical(@outclass-blue-lighter, darken(@outclass-blue-lighter, 15%));
+
+			}
+		span{
+			line-height: @line-height-computed*4;
+			font-size:  @outclass-font-jumbo;
+//			text-shadow: darken(@outclass-blue-dark, 20%) 0px -1.5px 0px;			
+			small{
+					font-size:  @font-size-base;
+					text-shadow: none;
+				}	
+			}
+	}
+
+
+}
+
+// Bar of progress
+.progress-bar {
+  .box-shadow(none);//overwrite styles
+  padding: 0 @grid-gutter-width / 2;
+
+  height: 100%;
+//  color: @progress-bar-color;
+  text-align: left;
+  background-color: #005F6B;
+//   #gradient > .vertical(@outclass-orange-dark, darken(@outclass-orange-dark, 10%));
+
+  span{
+	display: block;
+	line-height: @line-height-computed*2;
+	font-size:  @outclass-font-large;
+	font-weight: 700;
+	text-shadow: darken(@outclass-blue-dark, 20%) 0px -1.5px 0px;			
+    small{
+		font-size:  @outclass-font-small;
+    	text-transform: uppercase;
+    	font-weight: 300;
+		text-shadow: none;
+    	}	
+	
+  }
+
+}
+
+
+	.indicator{
+		height: 100%;
+		position: relative;
+		position: absolute;
+		left: -@grid-gutter-width / 2;
+		right: -@grid-gutter-width / 2;;
+		top: 0;
+		z-index: @zindex-score+1;
+		background: transparent url(../images/line.png) repeat-y  70% -220px;
+		i{
+			position: absolute;
+			left: 67.1%;
+			top: @line-height-computed*4-13px;
+			
+			font-size: 26px;
+			
+			height: 21.5px;
+			width: 21.5px;
+			.border-radius(14px);
+			display: block;
+			line-height: 21.5px;
+			text-align: center;
+			background: @outclass-blue-dark;
+			color: @outclass-blue;
+		//	border: 1px solid @outclass-orange;			
+ 		   }
+
+		
+ 		}
+
+
+}// progress alt
+
+
+
+// info-box ===================================================
+
+.info-box{
+	background: #fff;
+	border-bottom: 1px solid @outclass-gray-lighter;
+	border-top: 1px solid @outclass-gray-lighter;
+	position: relative;
+
+	&>div{
+//	background: rgba(0,0,0,.1);
+//	.box-shadow(inset 0 0 10px darken(@outclass-gray, 15%)) !important;
+	border-left: 1px solid @outclass-gray-lighter;
+	&:first-child{
+		border: none;
+	}
+	a{
+		padding-top: 10px;
+		padding-bottom: 10px;
+		color: @outclass-text-color-muted;
+		display: block;
+		&:hover{
+			text-decoration: none;
+			color: @outclass-text-color;
+		}
+	}
+	
+	h6{
+		text-transform: uppercase;
+		margin: 0;
+	}
+	
+	p{
+		font-weight: 400;
+		margin: 0 0 0px 0;
+		font-size:  @outclass-font-large;
+		text-shadow: #fff 0px 1.5px 0px;		
+		strong{
+			font-weight: 700;
+			color: @outclass-text-color;
+		}
+	}
+}
+
+}
+
+
+
+// NAV ==================================================
+
+nav{
+	position: fixed;
+	bottom: 0;
+	z-index: @zindex-nav;
+	text-align: center;
+	background: @outclass-gray-dark;
+	#gradient > .vertical(@outclass-gray-dark, darken(@outclass-gray-dark,10%));		
+	width: 100%;
+	.box-shadow(0 -3px 5px rgba(0,0,0,.2));
+	
+	ul{
+		.clearfix;
+		margin-bottom: 0;
+	}
+	
+	li{
+		float: left;
+		width: 20%;
+		&:first-child a{border-left: none;}
+		&:last-child a{border-right: none;}
+
+		&.active{
+			a{
+				background: darken(@outclass-gray-dark,10%);
+				color: @outclass-blue-lighter;
+				.box-shadow(inset 0 5px 5px #000);
+				border-top: 4px solid @outclass-blue-lighter;
+				padding-top: 4px;
+			}
+		}
+	}
+	
+	a{
+		display: block;
+		line-height: 42px;
+		padding-top: 8px;
+		
+		border-left:1px solid @outclass-gray-dark;
+		border-right:1px solid darken(@outclass-gray-dark,10%);
+		
+		color: @outclass-gray-lighter;
+		text-shadow: darken(@outclass-gray-dark, 20%) 0px -1.5px 0px;
+		&:hover{
+			color: @outclass-blue-lighter;
+			text-decoration: none;
+		}
+	}
+	
+	span{
+		display: none;
+	}
+}
+
+
+
+// Materias ====================================================
+
+
+.navlist{	
+	
+	margin: 0 -@grid-gutter-width/2;
+
+	ul{
+		margin-bottom: 0;
+	}
+	li{
+		padding: 0 @grid-gutter-width/2;
+	 	line-height: 50px;
+		border-bottom:1px solid @outclass-gray-light;
+		font-weight: 400;
+ 	}
+
+ 	
+ 	a{
+	 	display: block;
+		color: @text-color;
+		.clearfix;
+		
+		&:hover{
+			color: @outclass-blue;
+			text-decoration: none;
+		}
+ 	}
+}
+
+
+.materias{	
+	display: none;
+	margin: 0;
+	#gradient > .vertical(@outclass-gray-dark, darken(@outclass-gray-dark,10%));		
+	.box-shadow(inset 0 5px 10px rgba(0,0,0,.5));	
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 50px;
+	max-height: 70%;
+	overflow: auto;
+	z-index: @zindex-materias;
+	
+	li{
+		border-top:1px solid @outclass-gray-dark;
+		border-bottom:1px solid darken(@outclass-gray-dark,10%);		
+ 	}
+ 	
+ 	a{
+		color: @outclass-gray-lighter;
+		text-shadow: darken(@outclass-gray-dark, 20%) 0px -1.5px 0px;
+		font-size:  @outclass-font-large;
+		.clearfix;
+		
+		&:hover{
+			color: @outclass-blue-lighter;
+			text-decoration: none;
+		}
+		span{
+		float: right;
+		font-weight: 300;
+		}
+ 	}
+}
+
+
+// Calendar ========================================
+
+.calendar{
+	margin-top: 10px;
+
+	.sunday{
+		background: rgba(0,0,0,.2);
+	}
+	
+	a{
+		color: @text-color;
+		display: block;
+	}
+	
+	.table-header{
+		font-weight: 700;
+	}
+	
+	.highlight{
+		background: @outclass-blue-dark;
+		color: @outclass-blue-lighter;
+	}
+	
+	.test{
+//		background: red;
+		position: relative;
+		i{
+			position: absolute;
+			right: 10px;
+			top: 12px;
+			color: rgba(0,0,0,.2);
+		}
+	}
+}//calendar
+
+.full-calendar{
+	text-align: center!important;
+
+	thead th{
+		text-align: center!important;
+		background: @outclass-gray-dark;
+		color: #fff;
+		text-transform: uppercase;
+		a{
+			color: #fff;
+		}
+	}
+
+
+	.summary{
+		font-size:  @outclass-font-small;
+		margin: 0 @grid-gutter-width / 2;
+		display: block;
+		line-height: 47px;
+		display: inline-block;
+//		strong{font-size:  @outclass-font-large;}
+	}
+
+
+}//full calendar
+
+
+// Settings ========================================
+
+.settings{
+margin-top: 10px;
+
+	.list-nav{
+		label{
+		font-weight: 400;
+		width: 100%;
+		.clearfix();
+		input[type="checkbox"]{
+			background: red;
+			float: right;
+//			margin-top: 18px;
+		}
+	}
+
+		a{
+//			background: red;
+			color: @text-color;
+			display: block;
+			padding: 10px 15px;
+			margin: -10px -15px;
+			font-weight: 400;
+			&:hover{
+				color: @outclass-blue;
+				text-decoration: none;
+			}
+
+		}
+		.active a{
+			color: #fff;
+		}
+					
+	}
+
+}
+
+
+
+//ciercle ================
+
+.score{
+	background: repeat 0 0 url(../images/retina_wood_@2X.png);
+	background-attachment: fixed;
+	margin: 0px -@grid-gutter-width/2;
+	padding: 20px @grid-gutter-width;
+	.box-shadow(0 0 10px rgba(0,0,0,.4) );
+	position: relative;
+	z-index: 9;
+	
+	.look-down{
+		color: rgba(0,0,0,.3);
+		display: block;
+		position: absolute;
+		bottom: 10px;
+		text-align: center;
+		left: 0;
+		right: 0;
+		display: none;
+	}
+
+	.chart{
+		
+		&:hover{text-decoration: none;}
+		display: block;
+//		background: rgba(0,0,0,.2);
+//		.box-shadow(0 0 10px rgba(0,0,0,.2));
+//		background: url(../images/ruedita.png) no-repeat 0 0;
+//		background-size: 350px 350px;
+//		background: red;
+//		.border-radius(50%);
+//		padding: 55px;
+
+img{
+	width: 100%;
+}
+		padding: 15px;
+
+//		border: 40px solid rgba(0,0,0,.2);
+		text-align: center;
+		&.gold{
+//			background: url(../images/ruedita_naranja.png)  no-repeat 0 0;
+		}
+	}
+
+	.info{
+		border: 1px solid rgba(0,0,0,.1);
+		margin: 2px;
+		.border-radius(50%);
+		li{
+//			margin: 0;
+			font-size: @font-size-base;
+			text-transform: uppercase;
+			font-weight: 400;
+//			line-height: normal;
+//			text-shadow: 0px -1.5px 0px #000;
+
+			span{
+				font-weight: 700;
+				display: block;
+				font-size: ceil(@font-size-base * 5);
+				line-height: ceil(@font-size-base * 4.5);
+//				background: yellow;
+			}//span
+		
+	&:first-child{
+//		background: red;
+		color: @outclass-blue;
+		margin: 15px 20px 0 20px;
+		padding: 0px 0 15px 0;
+		border-bottom: 1px solid rgba(0,0,0,.1);
+		text-shadow: rgba(255,255,255,.7) 0px 1.5px 0px;
+
+	}//h2
+	
+	&:last-child{
+		font-size: @outclass-font-small!important;
+		margin-top: 5px;
+//		color: @outclass-blue-dark;
+		color: rgba(0,0,0,.5);
+		span{
+			font-size: ceil(@font-size-base * 2);
+			line-height: normal;
+			}
+	}//h2
+		
+		
+		
+		}//li
+	
+	
+	}//info
+	
+}//score
+
+
