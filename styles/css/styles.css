@@ -5900,6 +5900,9 @@ nav {
 .main-background {
   background-image: url("../../img/bg_blue.jpg");
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   background-color: #1786b9;
   position: fixed;
