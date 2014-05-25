@@ -3,7 +3,7 @@ jQuery(function($){
 
 // $.stellar();
 
-$('.store-button').tooltip();
+$('.store-button, .change_language').tooltip();
 //$('nav a').tooltip();
 
 
