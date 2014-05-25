@@ -4387,72 +4387,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/favicon\/apple-touch-icon-114x114-precomposed.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 19044,
-		"inputAbbreviatedPath": "\/favicon\/apple-touch-icon-114x114-precomposed.png",
-		"outputAbbreviatedPath": "\/favicon\/apple-touch-icon-114x114-precomposed.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/favicon\/apple-touch-icon-144x144-precomposed.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 24830,
-		"inputAbbreviatedPath": "\/favicon\/apple-touch-icon-144x144-precomposed.png",
-		"outputAbbreviatedPath": "\/favicon\/apple-touch-icon-144x144-precomposed.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/favicon\/apple-touch-icon-57x57-precomposed.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 8558,
-		"inputAbbreviatedPath": "\/favicon\/apple-touch-icon-57x57-precomposed.png",
-		"outputAbbreviatedPath": "\/favicon\/apple-touch-icon-57x57-precomposed.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/favicon\/apple-touch-icon-72x72-precomposed.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 10832,
-		"inputAbbreviatedPath": "\/favicon\/apple-touch-icon-72x72-precomposed.png",
-		"outputAbbreviatedPath": "\/favicon\/apple-touch-icon-72x72-precomposed.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/favicon\/apple-touch-icon.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 8558,
-		"inputAbbreviatedPath": "\/favicon\/apple-touch-icon.png",
-		"outputAbbreviatedPath": "\/favicon\/apple-touch-icon.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/favicon\/favicon.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 779,
-		"inputAbbreviatedPath": "\/favicon\/favicon.png",
-		"outputAbbreviatedPath": "\/favicon\/favicon.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/footer.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -4645,6 +4579,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/img\/Brazil.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2549,
+		"inputAbbreviatedPath": "\/img\/Brazil.png",
+		"outputAbbreviatedPath": "\/img\/Brazil.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/defrente-lg@1x.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -4710,6 +4655,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
+		},
+	"\/img\/England.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 636,
+		"inputAbbreviatedPath": "\/img\/England.png",
+		"outputAbbreviatedPath": "\/img\/England.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/img\/feed.jpg": {
 		"fileType": 16384,

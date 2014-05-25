@@ -55,69 +55,13 @@ h1,h2,h3,h5,h6{
 
 
 // nav  ====================================================================
-/*  #gradient > .vertical(@color-outclass, rgba(23,134,185,.5));
-  #gradient > .vertical(rgba(0,0,0,.3), rgba(0,0,0,.5) ,0%,80%);
-  background: rgba(23,134,185,.5);
-  background: rgba(0,0,0,.5);
-	width: 100%;
-	position: fixed;
-	z-index: 9010;
-  
-  ul{
-    float: right;
-    margin: 0;
-    list-style: none;
-    li{
-      float: left;
-    &.active a, &.aactive a{
-      color: #fff;
-      #gradient > .vertical(rgba(0,0,0,.1), rgba(0,0,0,.3));
-      text-shadow: 0 1px 0px rgba(0,0,0,.4);
-    } 
-    }
-    
-    a{
-      display: block;
-      padding: 20px 10px;
-      color: rgba(255,255,255,.8);
-      font-weight: 700;
-      &:hover{
-        color: #fff;
-        text-decoration: none;
-      }
-    }
-
-  }	*/
-
-
-// .subscribe{
-//   #gradient > .vertical(@color-outclass, rgba(23,134,185,.5));
-//  #gradient > .vertical(rgba(0,0,0,.3), rgba(0,0,0,.5) ,0%,80%);
-//  background: rgba(23,134,185,.5);
-//  background: rgba(0,0,0,.5);
-//  background: url(../../img/gradient_top.png) repeat-x 0 0;
-//	width: 100%;
-//	position: absolute;
-//	z-index: 9010;
-//	padding: 10px 0;
-//	background-size: 50%;
-//text-align: right;
-//
-//label{
-//  .text-white;
-//  font-weight: @font-weight-normal;
-//}
-//
-//}
-
-
 
 
 
 /* Common styles and resets */
 
 nav{
-//  background: red;
+ // background: red;
 //  padding: 200px;
   position: fixed;
   z-index: 1000000;
@@ -125,7 +69,7 @@ nav{
   height: 100%;
   width: 80px;
   padding-left: 30px;
-}
+}  
 
 .dotstyle ul {
 	position: relative;
@@ -215,6 +159,23 @@ nav{
 	bottom: 0;
 	z-index: -5;
 }
+
+
+// change language ====================================================================
+
+.change_language{
+  position: absolute;
+  right: 30px;
+  top:30px;
+  .size(24px, 24px);
+  background: url(../../img/England.png) no-repeat 0 0;
+  background-size: 24px 24px;
+  font-size: 2px;
+  text-indent: -999999px;
+  cursor: pointer;
+  display: block;
+}
+
 // header ====================================================================
 
 header{
