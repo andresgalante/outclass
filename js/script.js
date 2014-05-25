@@ -1,10 +1,10 @@
 
 jQuery(function($){
 
-$.stellar();
+// $.stellar();
 
 $('.store-button').tooltip();
-$('nav a').tooltip();
+//$('nav a').tooltip();
 
 
 

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Outclass</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	
+	<!-- Bootstrap -->
+	<link href="less/outclass.css" rel="stylesheet" media="screen">
+
+    <!--  fav and touch icons -->
+    <link rel="shortcut icon" href="public/img/favicon.ico">
+    <link rel="apple-touch-icon" href="public/img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-touch-icon-144x144-precomposed.png">
+
+  </head>
+  <body>
+  
+
+<header>	
+	<a id="simple-menu" href="calendar-day.html"><i class="icon-chevron-left icon-2x"></i></a>
+
+	<h1>Calendario</h1>
+
+	<div class="main-menu">
+		<a href="inbox.html"><i class="icon-comments-alt icon-2x"></i></a>
+		<a href="settings.html"><i class="icon-cog icon-2x"></i></a>		
+	</div>
+</header>
+
+
+<nav>
+	<ul class="list-unstyled">
+		<li><a href="home.html"><i class="icon-home icon-2x"></i><span>home</span></a></li>
+		<li class="active"><a href="calendar.html"><i class="icon-calendar icon-2x"></i><span>calendario</span></a></li>
+		
+		<li id="report"><a href="#"><i class="icon-book icon-2x"></i><span>boletin</span></a></li>
+
+		<li><a href="rank.html"><i class="icon-trophy icon-2x"></i><span>leaderboard</span></a></li>
+		<li><a href="contacts.html"><i class="icon-envelope-alt icon-2x"></i><span>contatos</span></a></li>
+	</ul>
+</nav>
+
+
+<div class="materias navlist">
+	<ul class="list-unstyled">
+		<li><a href="matematica.html">Matemática <span>8.4</span></a></li>
+		<li><a href="biologia.html">Biologia <span>10</span></a></li>
+		<li><a href="#">Ingles <span>10</span></a></li>
+		<li><a href="#">Educação fisicia <span>6</span></a></li>
+		<li><a href="#">Quimica <span>7.7</span></a></li>
+		<li><a href="#">Fisica <span>9</span></a></li>
+		<li><a href="#">Artes <span>9.6</span></a></li>
+		<li><a href="#">Historia <span>8</span></a></li>
+		<li><a href="#">Literatura <span>7.8</span></a></li>
+	</ul>
+</div>
+
+
+
+<div class="container">
+
+	<div class="vcard contact teacher alt">
+		
+		<div class="btn-group contact-info">
+		    <a class="btn btn-default" href="mailto:deweyfinn@schoolname.com"><i class="icon-envelope icon-large"></i></a>
+		    <a class="btn btn-default" href="tel:554893873837"><i class="icon-phone icon-large"></i></a>
+		</div>			
+
+		<div class="thumb"><img class="photo avatar-alt" src="images/proffesor4.jpg" height="50" width="50"/></div>
+
+		<div class="contact-name">
+			<h3 class="fn">Prof Lauro</h3>
+		</div>
+
+	</div><!-- teacher -->
+
+
+<div class="regular-text">
+
+<h3>Prova de Matematicas</h3>
+<h6><i class="icon-calendar"> 23 Maio as 10:00</i></h6>
+<p>
+<div class="btn-group">
+	<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+		<i class="icon-bell-alt"></i> Alarme <span class="caret"></span>
+	</button>
+	
+	<ul class="dropdown-menu" role="menu">
+		<li><a href="#">Na hora da prova</a></li>
+		<li><a href="#">5 minutos antes</a></li>
+		<li><a href="#">30 minutos antes</a></li>
+		<li><a href="#">1 hora antes</a></li>
+		<li><a href="#">2 hora antes</a></li>
+		<li><a href="#">1 dia antes</a></li>
+		<li><a href="#">1 semana antes</a></li>
+	</ul>
+
+</div>
+</p>
+
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<ul>
+	<li>Ut enim ad minim veniam, quis nostrud exercitat</li>
+	<li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
+	<li>Ad minim veniam, quis nostrud exercitat</li>
+	<li>Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
+</ul>
+
+</div><!-- regular-text -->
+
+
+
+
+
+
+
+</div><!-- conainer -->
+
+
+
+
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="js/jquery.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+
+	
+<script>
+$("#report a").click(function() {
+  $(".materias").slideToggle();
+});
+</script>
+		
+   
+	
+	</body>
+</html>
