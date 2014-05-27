@@ -7,7 +7,11 @@
 @import "../../bower_components/bootstrap/less/bootstrap.less";
 
 // Font
-@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700|Fjalla+One); 
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Sans+Narrow:400,700|Amatic+SC:400); 
+
+
+
+@import url(http://fonts.googleapis.com/css?family=Just+Another+Hand|Waiting+for+the+Sunrise|Shadows+Into+Light|Amatic+SC:400,700|Shadows+Into+Light+Two);
 
 
 @color-fb: #3B5999;
@@ -17,7 +21,7 @@
 
 @font-weight-bold: 700;
 @font-weight-normal: 400;
-@font-size-base:          16px;
+@font-size-base:  16px;
 @text-color: rgba(0,0,0,.7);
 
 .text-white{
@@ -29,11 +33,16 @@
 
 @font-family-sans-serif: 'PT Sans', MyriadPro-Regular, 'Myriad Pro Regular', MyriadPro, 'Myriad', Myriad,  "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-@font-family-alt:'Fjalla One', sans-serif;
+@font-family-alt:'PT Sans Narrow', sans-serif;
 
-h2,h5{
+h1,h2,h3,h5,h6{
+  font-weight: @font-weight-normal;
+}
+
+h2{
 	font-family: @font-family-alt;
 	text-transform: uppercase;
+	font-weight: 700;
 }
 
 body{
@@ -43,9 +52,6 @@ body{
 
 stron{
   font-weight: @font-weight-bold;	
-}
-h1,h2,h3,h5,h6{
-  font-weight: @font-weight-normal;
 }
 
 .container{
@@ -168,13 +174,19 @@ nav{
   right: 30px;
   top:30px;
   .size(24px, 24px);
-  background: url(../../img/USA.png) no-repeat 0 0;
+  background-image: url(../../img/USA.png);
+  background-repeat:  no-repeat;
+  background-position:  0 0;
   background-size: 24px 24px;
   font-size: 2px;
   text-indent: -999999px;
   cursor: pointer;
   z-index: 9999999;
 //  display: block;
+
+  &.portugues{
+      background-image: url(../../img/Brazil.png);
+  }
 }
 
 // header ====================================================================
@@ -186,11 +198,15 @@ header{
 	.text-white;
 	
    .highlight{
-   background: #e2d24c;
-   color: #222; 
-   text-shadow: none;
-   padding: 2px;
- }
+   margin-bottom: 0;
+   span{
+    background: #e2d24c;
+    color: #222; 
+    text-shadow: none;
+    padding: 2px;
+    font-size: @font-size-base*.9;
+   }
+  }
  
  #avisos{
    text-shadow: none;   
@@ -252,7 +268,9 @@ article{
 color: rgba(0,0,0,.6);
 h2{
   line-height: 1.5em;
-  font-size: @font-size-base;
+//  font-size: @font-size-base;
+  font-family: 'Amatic SC', cursive;
+  text-transform: none;
 }
 //	background-color: @brand-primary;
 //  background-image:url("../../img/bg_blue_dark.jpg");
@@ -291,7 +309,12 @@ section{
 		margin:-97px 0 0em 0;
 	}
 
+
+h2{
+	margin-bottom: 20px;
 }
+
+}//secion
 
 .gradient-gray{
 	#gradient > .vertical(#fff; #f8f9fa; 0%; 5%;);
@@ -299,8 +322,9 @@ section{
 
 h2{
 	text-align: center;
-	margin-bottom: 20px;
+//	margin-bottom: 20px;
 }
+
 
 h6{
   text-align: center;
@@ -372,10 +396,7 @@ h5{
 
 .users{
 	h5{
-//		text-align: center;
-//		background: @color-outclass;
-//		color: #fff;
-//		padding: 10px 0;
+	    font-size: @font-size-base*1.2;
 		i{
 			display: none;
 			width: auto;
@@ -409,6 +430,10 @@ h5{
 
 .team{
 	background-size: cover;
+}
+
+.team-info em{
+ font-family: baskerville,cocchio,hoefler text,platino linotype; 
 }
 
 .vcard{
@@ -515,12 +540,6 @@ margin-top: 20px;
     background-size: 282px 491px;
   }
   
-  article{
-    
-  h2{
-  font-size: @font-size-h2;
-  }
-}
     
 
 }
@@ -536,8 +555,9 @@ margin-top: 20px;
      
   
   .header-text{
-    padding-top: 60px;
+    padding-top: 50px;
   }
+  
   
   .outclass-iphone{
     background:  url("../../img/trescuartos-lg@2x.png") no-repeat center center;
