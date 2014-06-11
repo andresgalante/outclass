@@ -15,40 +15,30 @@
 // @import url(http://fonts.googleapis.com/css?family=Just+Another+Hand|Waiting+for+the+Sunrise|Shadows+Into+Light|Amatic+SC:400,700|Shadows+Into+Light+Two);
 
 
-@color-fb: #3B5999;
-@color-twitter: #55acee;
-@color-outclass: rgba(23,134,185,1);
+@color-outclass: #1785B8;
 @brand-primary: @color-outclass;
 
 @font-weight-bold: 700;
 @font-weight-normal: 400;
-@font-size-base:  16px;
-@text-color: rgba(0,0,0,.7);
+// @font-size-base:  16px;
+@text-color: darken(@brand-primary, 20%);
 
 .text-white{
 	color: #fff;
-	text-shadow: 0 1px 3px rgba(0,0,0,.7);
+	text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 
 
 
-@font-family-sans-serif: 'PT Sans', MyriadPro-Regular, 'Myriad Pro Regular', MyriadPro, 'Myriad', Myriad,  "Helvetica Neue", Helvetica, Arial, sans-serif;
+//@font-family-sans-serif: 'PT Sans', MyriadPro-Regular, 'Myriad Pro Regular', MyriadPro, 'Myriad', Myriad,  "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-@font-family-alt:'PT Sans Narrow', sans-serif;
+// @font-family-alt:'PT Sans Narrow', sans-serif;
 
-h1,h2,h3,h5,h6{
-  font-weight: @font-weight-normal;
-}
-
-h2{
-	font-family: @font-family-alt;
-	text-transform: uppercase;
-	font-weight: 700;
-}
 
 body{
   font-weight: @font-weight-normal;
-  background: #fff;
+  padding-top: 50px;
+  
 }
 
 stron{
@@ -62,5 +52,87 @@ stron{
 
 
 // nav  ====================================================================
+
+
+
+nav{
+  text-shadow: 0 1px 0 rgba(0,0,0,.4);
+  li ul{
+    text-shadow: none;
+  }
+  
+  .user{
+    background: red;
+    position: relative;
+    padding-left: 50px;
+    img{
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Basics of a navbar
+//@navbar-height:                    60px;
+//@navbar-margin-bottom:             @line-height-computed;
+//@navbar-border-radius:             @border-radius-base;
+// @navbar-padding-horizontal:        floor((@grid-gutter-width / 2));
+// @navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
+//@navbar-collapse-max-height:       340px;
+
+
+
+// Inverted navbar
+// Reset inverted navbar basics
+//@navbar-inverse-color:                      @gray-lighter;
+@navbar-inverse-bg:                         @brand-primary;
+//@navbar-inverse-border:                     darken(@navbar-inverse-bg, 10%);
+
+// Inverted navbar links
+@navbar-inverse-link-color:                 #c4e7f7;
+//@navbar-inverse-link-hover-color:           #fff;
+@navbar-inverse-link-hover-bg:              @navbar-inverse-link-active-bg;
+//@navbar-inverse-link-active-color:          @navbar-inverse-link-hover-color;
+@navbar-inverse-link-active-bg:             darken(@navbar-inverse-bg, 5%);
+//@navbar-inverse-link-disabled-color:        #444;
+//@navbar-inverse-link-disabled-bg:           transparent;
+
+// Inverted navbar brand label
+//@navbar-inverse-brand-color:                @navbar-inverse-link-color;
+//@navbar-inverse-brand-hover-color:          #fff;
+//@navbar-inverse-brand-hover-bg:             transparent;
+
+// Inverted navbar toggle
+@navbar-inverse-toggle-hover-bg:            @navbar-inverse-link-active-bg;
+//@navbar-inverse-toggle-icon-bar-bg:         #fff;
+@navbar-inverse-toggle-border-color:        @navbar-inverse-link-active-bg;
+
+
+
+
+
+
+
+
+
+
+
+
 
 
