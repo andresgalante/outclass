@@ -5797,12 +5797,13 @@ nav li ul {
   text-shadow: none;
 }
 nav .user {
-  background: red;
   position: relative;
-  padding-left: 50px;
+  padding-left: 50px!important;
+  display: block;
 }
 nav .user img {
   position: absolute;
   top: 10px;
   left: 10px;
+  border-radius: 50%;
 }
