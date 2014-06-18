@@ -272,7 +272,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #0c435d;
+  color: #333333;
   background-color: #ffffff;
 }
 input,
@@ -1920,7 +1920,7 @@ select[multiple].input-lg {
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #1a95cf;
+  color: #737373;
 }
 @media (min-width: 768px) {
   .form-inline .form-group {
@@ -4416,7 +4416,7 @@ a.thumbnail.active {
 }
 .thumbnail .caption {
   padding: 9px;
-  color: #0c435d;
+  color: #333333;
 }
 .alert {
   padding: 15px;
@@ -5793,6 +5793,13 @@ nav {
 nav li ul {
   text-shadow: none;
 }
+nav .navbar-brand {
+  background: url(../../img/logo_site_admin.png) no-repeat 0 0;
+  background-size: 146px 50px;
+  text-indent: -99999px;
+  width: 146px;
+  height: 50px;
+}
 .sidebar {
   position: fixed;
   top: 101px;
@@ -5814,7 +5821,7 @@ nav li ul {
 .nav-container .side-nav {
   list-style: none;
   padding: 0;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
 .nav-container li {
@@ -5850,7 +5857,7 @@ nav li ul {
   display: none;
 }
 .vcard {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.8);
   text-align: left;
   padding-left: 10px;
@@ -5860,8 +5867,8 @@ nav li ul {
   top: 51px;
   right: 0;
   cursor: pointer;
-  color: #ffffff;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.9);
+  color: rgba(0, 0, 0, 0.7);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
 }
 .vcard .photo {
   border-radius: 50%;
@@ -5894,10 +5901,62 @@ nav li ul {
 }
 .vcard:hover {
   color: #fff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.6);
   text-decoration: none;
 }
 .vcard:hover .edit-profile {
   display: block;
+}
+.unit-stream {
+  margin: 20px 0 10px -10px;
+}
+.unit-stream:before,
+.unit-stream:after {
+  content: " ";
+  display: table;
+}
+.unit-stream:after {
+  clear: both;
+}
+.unit-stream:before,
+.unit-stream:after {
+  content: " ";
+  display: table;
+}
+.unit-stream:after {
+  clear: both;
+}
+.unit {
+  position: relative;
+  display: block;
+  padding: 16px;
+  float: left;
+  margin: 0 0 10px 10px;
+  border: 1px solid #eeeeee;
+  border-radius: 6px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.1s linear;
+}
+.unit:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.unit address {
+  margin-bottom: 10px;
+}
+.unit .example {
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.add-unit {
+  cursor: pointer;
+  line-height: 100px;
+  text-align: center;
+  width: 200px;
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -5933,6 +5992,7 @@ nav li ul {
   }
   .vcard .fn {
     display: block;
-    line-height: 40px;
+    line-height: 30px;
+    padding-bottom: 10px;
   }
 }

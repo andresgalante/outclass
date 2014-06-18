@@ -4590,6 +4590,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/bg_gray_admin.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 94992,
+		"inputAbbreviatedPath": "\/img\/bg_gray_admin.jpg",
+		"outputAbbreviatedPath": "\/img\/bg_gray_admin.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/bg_green.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -4865,6 +4876,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/logo_site_admin.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12363,
+		"inputAbbreviatedPath": "\/img\/logo_site_admin.png",
+		"outputAbbreviatedPath": "\/img\/logo_site_admin.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/marcosbuson_SV.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -5109,6 +5131,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/jquery.scrollNav.min.js",
 		"outputAbbreviatedPath": "\/js\/min\/jquery.scrollNav.min-ck.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/min\/admin-script-ck.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/min\/admin-script-ck.js",
+		"outputAbbreviatedPath": "\/js\/min\/min\/admin-script-ck-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,

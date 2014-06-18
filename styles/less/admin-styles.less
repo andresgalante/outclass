@@ -27,12 +27,13 @@
 @font-weight-bold: 700;
 @font-weight-normal: 400;
 // @font-size-base:  16px;
-@text-color: darken(@brand-primary, 20%);
+// @text-color: darken(@brand-primary, 20%);
 
 .text-white{
 	color: #fff;
 	text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
+
 
 
 
@@ -66,6 +67,14 @@ nav{
   li ul{
     text-shadow: none;
   }
+  
+  .navbar-brand{
+    background: url(../../img/logo_site_admin.png) no-repeat 0 0;
+    background-size: 146px 50px;
+    text-indent: -99999px;
+    .size(146px, 50px);
+  }
+  
 }//nav
 
 
@@ -83,6 +92,8 @@ display: block;
 overflow-x: hidden;
 overflow-y: auto;
 background-color: rgba(0,0,0,.1);
+// background: url(../../img/bg_gray_admin.jpg) no-repeat 0 0;
+//background-size: cover;
 
 
 //border-right: 1px solid #eee;
@@ -110,7 +121,7 @@ background-color: rgba(0,0,0,.1);
   .side-nav{
    list-style: none;
    padding: 0; 
-   background-color: rgba(0,0,0,.2);
+   background-color: rgba(0,0,0,.1);
    box-shadow: 0 0 10px rgba(0,0,0,.7);
   }
   
@@ -155,10 +166,17 @@ background-color: rgba(0,0,0,.1);
 }//.nav-container
 
 
+
+// page-header ===========================================
+
+.page-header{
+//  background: red;
+}
+
 // vcard ===========================================
 
 .vcard{
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0,0,0,.2);
   border-bottom: 1px solid rgba(255,255,255,.8);
   text-align: left;
   padding-left: 10px;
@@ -168,9 +186,8 @@ background-color: rgba(0,0,0,.1);
   top: 51px;
   right: 0;
   cursor: pointer;
-  color: rgba(255,255,255,1);
-  text-shadow: 0 -1px 0 rgba(0,0,0,.9);
-  
+  color: rgba(0,0,0,.7);
+  text-shadow: 0 1px 0 rgba(255,255,255,.6);  
   
   .photo{
     .img-circle;
@@ -206,6 +223,7 @@ background-color: rgba(0,0,0,.1);
 
   &:hover{
     color: #fff;
+    text-shadow: 0 1px 0 rgba(0,0,0,.6);
     text-decoration: none;
     .edit-profile{display: block;}
   }  
@@ -215,6 +233,55 @@ background-color: rgba(0,0,0,.1);
 
 
 
+// unit ===============================
+
+.unit-stream{
+  margin: 20px 0  10px -10px;
+  .clearfix;
+}
+.unit{
+//  background: red;
+  position: relative;
+  display: block;
+  padding: @padding-large-horizontal;
+  float: left;
+  margin: 0 0 10px 10px;
+  border: 1px solid @gray-lighter;
+  border-radius: @border-radius-large;
+  box-shadow: 0 0 3px rgba(0,0,0,.1);
+   transition: all 0.1s linear;  
+//  margin-bottom: 5px;
+//  padding-bottom: 5px;
+//  border-bottom: 1px solid @gray-lighter;
+  &:hover{
+    box-shadow: 0 0 5px rgba(0,0,0,.2);    
+  }
+  address{
+    margin-bottom: 10px;
+  }
+  .example{
+    border-radius: @border-radius-large;
+    background: rgba(255,255,255,.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+}
+
+.add-unit{
+//  background: red;
+  cursor: pointer;
+  line-height: 100px;
+  text-align: center;
+  width: 200px;
+  }
+
+
+
+// responsive ===============================
 
 
 /* Small devices (tablets, 768px and up) */
@@ -256,7 +323,8 @@ top: 51px;
   
   .fn{
     display: block;
-    line-height: 40px;
+    line-height: 30px;
+    padding-bottom: 10px;
   }
 
 }//vcard
