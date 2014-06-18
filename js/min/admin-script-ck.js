@@ -1,0 +1,1 @@
+jQuery(function(n){n("abuelo").on("click","[data-borar]",function(){})});
