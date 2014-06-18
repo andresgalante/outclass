@@ -5942,6 +5942,7 @@ nav .navbar-brand {
 }
 .unit address {
   margin-bottom: 10px;
+  min-height: 120px;
 }
 .unit .example {
   border-radius: 6px;
@@ -5954,9 +5955,15 @@ nav .navbar-brand {
 }
 .add-unit {
   cursor: pointer;
-  line-height: 100px;
+  line-height: 120px;
   text-align: center;
   width: 200px;
+  height: 150px;
+}
+.unit-admin {
+  background: #eeeeee;
+  margin: 0 -16px -16px -16px;
+  padding: 10px 16px;
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
