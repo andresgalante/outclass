@@ -5776,16 +5776,8 @@ button.close {
     display: none !important;
   }
 }
-.text-white {
-  color: #fff;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-}
 body {
-  font-weight: 400;
   padding-top: 101px;
-}
-stron {
-  font-weight: 700;
 }
 nav {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
@@ -5822,7 +5814,7 @@ nav .navbar-brand {
   list-style: none;
   padding: 0;
   background-color: rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 }
 .nav-container li {
   position: relative;
@@ -5855,6 +5847,9 @@ nav .navbar-brand {
 }
 .nav-container .text {
   display: none;
+}
+.page-header {
+  margin-top: 0;
 }
 .vcard {
   background-color: rgba(0, 0, 0, 0.2);
@@ -5927,25 +5922,25 @@ nav .navbar-brand {
   clear: both;
 }
 .unit {
+  width: 100%;
   position: relative;
   display: block;
   padding: 16px;
   float: left;
   margin: 0 0 10px 10px;
   border: 1px solid #eeeeee;
-  border-radius: 6px;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
   transition: all 0.1s linear;
 }
 .unit:hover {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
 }
 .unit address {
   margin-bottom: 10px;
   min-height: 120px;
 }
 .unit .example {
-  border-radius: 6px;
+  border-radius: 4px;
   background: rgba(255, 255, 255, 0.8);
   position: absolute;
   top: 0;
@@ -5958,7 +5953,7 @@ nav .navbar-brand {
   line-height: 120px;
   text-align: center;
   width: 200px;
-  height: 150px;
+  height: 148px;
 }
 .unit-admin {
   background: #eeeeee;
@@ -5968,7 +5963,7 @@ nav .navbar-brand {
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   body {
-    padding-top: 51px;
+    padding-top: 61px;
   }
   .sidebar {
     top: 51px;
@@ -6001,5 +5996,8 @@ nav .navbar-brand {
     display: block;
     line-height: 30px;
     padding-bottom: 10px;
+  }
+  .unit {
+    width: auto;
   }
 }

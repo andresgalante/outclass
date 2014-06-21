@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Outclass</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	
+	<!-- Bootstrap -->
+	<link href="styles/css/admin-styles.css" rel="stylesheet" media="screen">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    
+    <link rel="shortcut icon" href="favicon//favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon/favicon.png">
+    <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-touch-fa fa-57x57-precomposed.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-touch-fa fa-72x72-precomposed.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-touch-fa fa-114x114-precomposed.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-touch-fa fa-144x144-precomposed.png">
+
+  </head>
+  <body>
+  
+
+
+
+    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Ouclass Admin</a>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+                <li><a href="support.html"><i class="fa fa-help fa-lg"></i> Suporte</a></li>
+                <li><a href="login.html"><i class="fa fa-sign-out fa-lg"></i> Sair</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+
+
+
+
+<div class="container-fluid">
+
+        <a href="config.html" class="vcard visible-xs">
+          <img src="img/antonio.jpg" alt="antonio" width="100" height="100" class="photo">
+          <span class="fn">Nome do Colegio</span>
+        </a> 
+
+  <div class="row">
+
+    <div class="col-xs-1 col-sm-3 col-md-2 sidebar">
+
+        <a href="config.html" class="vcard hidden-xs">
+          <img src="img/antonio.jpg" alt="antonio" width="100" height="100" class="photo">
+          <span class="fn">Nome do Colegio</span>       
+          <div class="edit-profile">
+            <i class="fa fa-pencil-square-o fa-lg"></i>
+          </div>
+        </a> 
+
+      <div class="nav-container">
+        <ul class="side-nav">        
+ 
+          <li class="active">
+            <a href="units.html">
+              <i class="fa fa-university fa-lg"></i>
+              <span class="text">Unidades</span>
+            </a>
+          </li>
+ 
+          <li>
+            <a href="inbox.html">
+              <i class="fa fa-envelope fa-lg"></i>
+              <span class="text">Mensagens</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="config.html">
+              <i class="fa fa-cog fa-lg"></i>
+              <span class="text">Configurações</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="password.html">
+              <i class="fa fa-lock fa-lg"></i>
+              <span class="text">Mudar senha</span>
+            </a>
+          </li>
+          
+ 
+        </ul>
+      </div>
+
+    </div><!00 side menu -->
+
+    <div class="col-xs-11 col-xs-offset-1 col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+
+
+<div class="alert alert-info"><strong>Informação.</strong> Se a gente tiver alguma info para dar aos colegios vai aqui.</div>
+<div class="alert alert-warning"><strong>Cuidado!</strong> Mensagens de warning vão em amarelo, por exemplo se alguem esqueceu de pagar e estamos por cortar o serviço ou algo assim.</div>
+<div class="alert alert-success"><strong>Muito bem!</strong> Mensagem de sucesso quando algo foi bem feito.</div>
+
+
+<div class="page-header">
+  <h1>Unidades <small class="hidden-xs">Administrar informação de contato</small></h1>
+</div>
+
+
+<p>Adicionar informações de contato da unidades do colegio, como por exemplo <strong>Biblioteca</strong>, <strong>Recepcão</strong>, <strong>Sala de professores</strong>, etc. Esta informação vai estar disponivel para os alunos e responsaveis no Outclass.</p>
+
+
+<!-- todo new hcard -->
+
+
+<section class="unit-stream">
+
+  <div class="unit">
+    <div class="example"></div>
+    <address>
+      <strong>Biblioteca</strong><br />
+      Sousa Lima, 315<br />
+      Rio de Janeiro, RJ 88983-000<br />
+      <abbr title="Phone">P:</abbr> (42) 9383-0373<br />
+      <abbr title="Email">M:</abbr> <a href="#">biblioteca@colegio.com</a>
+    </address>
+    <div class="unit-admin">
+      <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o"></i> Edit</a>
+      <a href="#" class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i> Delete</a>
+    </div>
+  </div><!-- unit -->
+
+
+  <div class="unit">
+    <div class="example"></div>
+    <address>
+      <strong>Receção</strong><br />
+      Sousa Lima, 315<br />
+      Rio de Janeiro, RJ 88983-000<br />
+      <abbr title="Phone">P:</abbr> (42) 9383-0373<br />
+      <abbr title="Email">M:</abbr> <a href="#">receção@colegio.com</a>
+    </address>
+    <div class="unit-admin">
+      <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o"></i> Edit</a>
+      <a href="#" class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i> Delete</a>
+    </div>
+  </div><!-- unit -->
+
+
+  <div class="unit">
+    <address>
+      <strong>Nome da Unidade</strong><br />
+      795 Folsom Ave, Suite 600<br />
+      San Francisco, CA 94107<br />
+      <abbr title="Phone">P:</abbr> (123) 456-7890<br />
+      <abbr title="Email">M:</abbr> <a href="#">unidade@colegio.com</a>
+    </address>
+    <div class="unit-admin">
+      <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o"></i> Edit</a>
+      <a href="#" class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i> Delete</a>
+    </div>
+  </div><!-- unit -->
+
+
+  <div class="unit">
+    <address>
+      <strong>Nome da Unidade</strong><br />
+      795 Folsom Ave, Suite 600<br />
+      San Francisco, CA 94107<br />
+      <abbr title="Phone">P:</abbr> (123) 456-7890<br />
+      <abbr title="Email">M:</abbr> <a href="#">unidade@colegio.com</a>
+    </address>
+    <div class="unit-admin">
+      <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o"></i> Edit</a>
+      <a href="#" class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i> Delete</a>
+    </div>
+  </div><!-- unit -->
+
+
+  <div class="unit">
+    <address>
+      <strong>Nome da Unidade</strong><br />
+      795 Folsom Ave, Suite 600<br />
+      San Francisco, CA 94107<br />
+      <abbr title="Phone">P:</abbr> (123) 456-7890<br />
+      <abbr title="Email">M:</abbr> <a href="#">unidade@colegio.com</a>
+    </address>
+    <div class="unit-admin">
+      <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o"></i> Edit</a>
+      <a href="#" class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i> Delete</a>
+    </div>
+  </div><!-- unit -->
+
+
+  <a class="unit add-unit">
+    <i class="fa fa-plus-circle fa-lg"></i> Adicionar unidade 
+  </a><!-- unit -->
+
+</section><!-- unit stream -->
+
+
+
+
+<div class="row">
+
+<div class="col-sm-8">
+
+
+<form role="form">
+
+  <div class="form-group">
+    <label for="unitUname">Nome da unidade</label>
+    <input type="text" class="form-control" id="unitUname" placeholder="Exemplo: Biblioteca, Receção ...">
+  </div><!-- form-group -->
+  
+  <div class="form-group">
+    <label for="unitEmail">Email</label>
+    <input type="email" class="form-control" id="unitEmail" placeholder="Email da unidade">
+  </div>
+
+  <div class="form-group">
+    <label for="unitPhone">Telefone</label>
+    <input type="tel" class="form-control" id="unitPhone" placeholder="Telefone da unidade">
+  </div>
+
+
+  <div class="form-group">
+    <label for="unitAddress">Endereço</label>
+    
+    <div class="row">
+      <div class="col-xs-6">
+        <input type="text" class="form-control" id="unitAddress" placeholder="Nome da Rua">
+      </div> <!--col -->
+      <div class="col-xs-3">
+        <input type="text" class="form-control" id="unitAddress" placeholder="Numero">
+      </div><!--col -->
+      <div class="col-xs-3">
+        <input type="text" class="form-control" id="unitAddress" placeholder="Complemento">
+      </div><!--col -->
+    </div><!-- row -->
+  </div><!-- form-group -->
+  
+  
+  <div class="form-group">
+    <label for="unitAddress">Estado/Cidade</label>
+    
+    <div class="row">
+      <div class="col-xs-8">
+        <input type="text" class="form-control" id="unitAddress" placeholder="Cidade">
+      </div> <!--col -->
+      
+      <div class="col-xs-4">
+        <input type="text" class="form-control" id="unitAddress" placeholder="Estado">
+      </div><!--col -->
+    </div><!-- row -->
+  </div><!-- form-group -->
+
+
+  <p><input type="submit" class="btn btn-success" value="Adicionar Unidade"></p>
+
+</form>
+
+</div><!-- col -->
+
+<div class="col-sm-4">
+
+  <div class="panel panel-info">
+    <div class="panel-heading">Panel de informação</div><!-- panel-heading -->
+    <div class="panel-body">
+      <p>Colocar aqui info de como preencer o form e o que ele faz, onde mostra a info etc.</p>
+      <p>Tambem tem que ter FAQ rapidas e info de support.</p>
+    </div><!-- panel body -->
+  </div><!-- panel -->
+
+</div><!-- col -->
+
+
+
+</div><!-- row-->
+
+
+<div class="page-header">
+  <h1>Configurações <small class="hidden-xs">Administrar informação da conta</small></h1>
+</div>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+<div class="row">
+
+<div class="col-sm-8">
+
+
+<form role="form">
+
+  <div class="form-group">
+    <label for="logo">Mudar a imagem da institucão de ensino</label>
+    <input type="file" id="logo">
+    <p class="help-block">Envie o logo do colegio, tem que ser um arquivo png, jpg ou gif de no máximo xxxkb.</p>
+  </div><!-- form-group -->
+  
+  
+  <div class="form-group">
+    <label for="email">Mudar o email da conta</label>
+    <input type="email" class="form-control" id="email" placeholder="Email">
+  </div>
+
+  <div class="form-group">
+    <label for="oldPassword">Senha atual</label>
+    <input type="password" class="form-control" id="oldPassword">
+  </div>
+
+  <div class="form-group">
+    <label for="newPassword">Nova senha</label>
+    <input type="password" class="form-control" id="newPassword">
+  </div>
+
+  <div class="form-group">
+    <label for="repeatPassword">Escreba a nova senha de novo</label>
+    <input type="password" class="form-control" id="repeatPassword">
+  </div>
+
+  <p><input type="submit" class="btn btn-success" value="Adicionar Unidade"></p>
+
+</form>
+
+</div><!-- col -->
+
+<div class="col-sm-4">
+
+  <div class="panel panel-info">
+    <div class="panel-heading">Panel de informação</div><!-- panel-heading -->
+    <div class="panel-body">
+      <p>Colocar aqui info de como preencer o form e o que ele faz, onde mostra a info etc.</p>
+      <p>Tambem tem que ter FAQ rapidas e info de support.</p>
+    </div><!-- panel body -->
+  </div><!-- panel -->
+
+</div><!-- col -->
+
+
+
+</div><!-- row-->
+
+
+
+
+
+
+
+<!-- ================================ -->
+
+<h2>Ola Username,</h2>
+
+<p>O Outclass recebe toda a informação do sistema de administração da sua institução de ensino, porem você pode dar informacão das unidades do seu colegio e mudar seus dados e foto no outclass.</p> 
+<p>Lembre que enviando mensagens no sistema da unimestre eles chegam direto na mão do aluno no outclass.</p>
+
+<p><a href="#" class="btn btn-success btn-lg"><i class="fa fa-plus-circle fa-lg"></i>  Adicionar unidade</a></p>
+
+
+    </div><!-- main area -->
+
+
+
+
+  </div><!-- row -->
+</div><!-- container fluid -->
+
+
+
+
+
+  
+
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="bower_components/jquery/dist/jquery.min.js"></script> 
+	
+	<!-- Include all compiled plugins (below), or include individual files as needed  -->  
+	<script src="js/bootstrap.min.js"></script>
+   
+  <!-- My script  -->
+  <script src="js/admin-script.js"></script>
+
+
+  
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44750198-1', 'outclassapp.com');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+
+
+
+
+	
+	
+	</body>
+</html>
