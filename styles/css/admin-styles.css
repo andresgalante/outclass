@@ -5803,6 +5803,9 @@ nav .navbar-brand {
   overflow-y: auto;
   background-color: rgba(0, 0, 0, 0.1);
 }
+.jumbotron {
+  border-radius: 6px;
+}
 .nav-container {
   position: absolute;
   left: 0;
@@ -5986,6 +5989,9 @@ nav .navbar-brand {
     display: block;
     top: 0;
   }
+  .vcard.active {
+    background: #f1f1f1;
+  }
   .vcard .photo {
     border-radius: 50%;
     margin: 10px 0 0 0;
@@ -6000,4 +6006,60 @@ nav .navbar-brand {
   .unit {
     width: auto;
   }
+}
+.admin-login {
+  padding-top: 0;
+  padding-bottom: 0;
+  background: url(../../img/bg_blue.jpg) no-repeat 0 0;
+  background-size: cover;
+}
+.admin-login .gradient {
+  background-image: -webkit-linear-gradient(top, #1785b8 0%, rgba(23, 134, 185, 0) 80%);
+  background-image: linear-gradient(to bottom, #1785b8 0%, rgba(23, 134, 185, 0) 80%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff1785b8', endColorstr='#001786b9', GradientType=0);
+  padding: 60px 0;
+}
+.admin-login p {
+  text-align: center;
+}
+.admin-login .form-signin-logo {
+  background: url("../../img/logo_admin_loginform@2x.png") no-repeat center center;
+  background-size: 200px 63px;
+  height: 63px;
+  text-indent: -999999px;
+}
+.admin-login .form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.admin-login .form-signin .form-signin-heading,
+.admin-login .form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.admin-login .form-signin .checkbox {
+  font-weight: normal;
+}
+.admin-login .form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.admin-login .form-signin .form-control:focus {
+  z-index: 2;
+}
+.admin-login .form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.admin-login .form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }

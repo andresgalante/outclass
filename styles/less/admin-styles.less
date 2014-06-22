@@ -98,6 +98,16 @@ background-color: rgba(0,0,0,.1);
 
 
 
+// jumbotron  ====================================================================
+
+.jumbotron{
+   border-radius: @border-radius-large;
+}
+
+@jumbotron-padding:              30px;
+@jumbotron-bg:                   @gray-lighter;
+@jumbotron-font-size:            ceil((@font-size-base * 1.5));
+
 
 // suide nav  ====================================================================
 
@@ -320,6 +330,10 @@ top: 51px;
   padding-left: 0px;
   display: block;
   top: 0;
+  &.active{
+    background: #f1f1f1;
+  }
+
   .photo{
     .img-circle;
      margin: 10px 0 0 0;
@@ -346,39 +360,66 @@ top: 51px;
 
 
 
-//@media only screen and (max-width : 860px){
-//  
-//  .text{
-//    display:none;
-//  }
-//  
-//  .nav-container , .nav-container a{
-//    width: 70px;
-//    
-//  }
-//   
-//  .nav-container a:hover{
-//    width:200px; 
-//    z-index:1;
-//    border-top: 1px solid rgba(255,255,255,0.1);
-//    border-bottom: 1px solid black;
-//    box-shadow: 0 0 1px 1px black;
-//  }
-//  
-//  .nav-container a:hover  .text {
-//    display:block;
-//    padding-left:30%;
-//  }
-//}
-//@media only screen and (max-width : 480px){
-//  .nav-container,.nav-container a{ width:50px;}
-//  span[class ^= "icon"]{ left:8px;}
-//}
-//
+
+.admin-login{
+    padding-top: 0;
+    padding-bottom: 0;
+    background: url(../../img/bg_blue.jpg) no-repeat 0 0;
+    background-size: cover;
+    
+    .gradient{
+  		#gradient > .vertical(@color-outclass, rgba(23,134,185,0),0%,80%);
+      padding: 60px 0;    
+    }
+    
+    p{
+      text-align: center;
+    }
+    
+  .form-signin-logo{
+   background:  url("../../img/logo_admin_loginform@2x.png") no-repeat center center;
+   background-size: 200px 63px;
+   height: 63px;
+   text-indent: -999999px;
+  } 
+   
+  .form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+  }
+  .form-signin .form-signin-heading,
+  .form-signin .checkbox {
+    margin-bottom: 10px;
+  }
+  .form-signin .checkbox {
+    font-weight: normal;
+  }
+  .form-signin .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .form-signin .form-control:focus {
+    z-index: 2;
+  }
+  .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
 
 
-
-
+}
 
 
 
