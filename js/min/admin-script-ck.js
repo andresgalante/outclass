@@ -1,1 +1,1 @@
-jQuery(function(n){n("abuelo").on("click","[data-borar]",function(){})});
+$(document).ready(function(){$(".loginForm").bootstrapValidator({feedbackIcons:{valid:"glyphicon glyphicon-ok",invalid:"glyphicon glyphicon-remove",validating:"glyphicon glyphicon-refresh"},fields:{email:{validators:{notEmpty:{message:"The email address is required"},emailAddress:{message:"The input is not a valid email address"}}}}})});

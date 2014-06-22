@@ -1,14 +1,34 @@
 
-jQuery(function($){
 
-  $("abuelo").on("click", "[data-borar]", function(){
+
+
+
+
+
+$(document).ready(function() {
+    $('.loginForm').bootstrapValidator({
     
-//    $(this)
-    
-  });
-});
-	
-	
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },//feedbackIcons
+        
+        
+        fields: {
+            email: {
+                validators: {
+                    notEmpty: {
+                        message: 'The email address is required'
+                    },// notEmpty
+                    emailAddress: {
+                        message: 'The input is not a valid email address'
+                    }// emailAddress
+                }//validators
+            },//email
+        },//fields
+    });//bootstrapValidator
+});//document
 
 
 //
