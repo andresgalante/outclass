@@ -5961,12 +5961,15 @@ nav .navbar-brand {
 }
 .unit .example {
   border-radius: 4px;
-  background: rgba(255, 255, 255, 0.7);
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.9) 50%);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.9) 50%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#99ffffff', endColorstr='#e6ffffff', GradientType=0);
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
   padding-top: 115px;
   text-align: center;
   font-weight: bold;

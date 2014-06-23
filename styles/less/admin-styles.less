@@ -280,12 +280,13 @@ margin-bottom: 40px;
   }
   .example{
     border-radius: @border-radius-base;
-    background: rgba(255,255,255,.7);
+    #gradient > .vertical(rgba(255,255,255,.6),rgba(255,255,255,.95),0%,50%);
+ //   border: 3px solid #fff;
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
     padding-top: 115px;
     text-align: center;
     font-weight: bold;
@@ -327,7 +328,7 @@ body{
 }
 
 .sidebar{
-top: 51px;
+  top: 51px;
 }
 
   .nav-container{
