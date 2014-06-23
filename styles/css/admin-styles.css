@@ -5905,6 +5905,23 @@ nav .navbar-brand {
 .vcard:hover .edit-profile {
   display: block;
 }
+.user {
+  margin-bottom: 40px;
+}
+.user img {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
 .unit-stream {
   margin: 20px 0 10px -10px;
 }

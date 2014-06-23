@@ -8,6 +8,7 @@
 	<!-- Bootstrap -->
 	<link href="styles/css/admin-styles.css" rel="stylesheet" media="screen">
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="bower_components/bootstrapValidator/dist/css/bootstrapValidator.min.css" rel="stylesheet" media="screen">
 
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -81,19 +82,21 @@
             </a>
           </li>
  
-          <li class="active">
+          <li>
             <a href="admin-inbox.html">
               <i class="fa fa-envelope fa-lg"></i>
               <span class="text">Mensagens</span>
             </a>
           </li>
 
-          <li>
+          <li class="active">
             <a href="admin-settings.html">
               <i class="fa fa-cog fa-lg"></i>
               <span class="text">Configurações</span>
             </a>
-          </li>          
+          </li>
+
+          
  
         </ul>
       </div>
@@ -103,20 +106,38 @@
     <div class="col-xs-11 col-xs-offset-1 col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 
 
-
 <div class="page-header">
-  <h1>Mensagens <small class="hidden-xs">Enviar mensagens</small></h1>
+  <h1>Configurações <small class="hidden-xs">Administrar informações da conta</small></h1>
 </div>
 
 
-<p>Outclass permite que você envie mensagens diretamente para os smartphones de alunos e responsáveis. As mensagens vão para o feed de notícias do Outclass.</p>
 
-<h3>Urgência</h3>
-<p>Quando a mensagem tiver caráter de urgência, como por exemplo o cancelamento de uma aula no mesmo dia ou no dia seguinte, clique no box “urgência” ao lado do campo de preenchimento da mensagem e ela também aparecerá como uma notificação na tela dos smartphones.</p>
+<div class="user row">
 
-<p><strong>Importante:</strong> Esse módulo está desabilitado pois a mesma ferramenta está disponível pelo software de gestão educacional utilizado pela sua instituição de ensino e interligado com o Outclass.</p>
+  <div class="col-sm-4">
+    <img src="img/antonio.jpg" alt="antonio">
+    <a href="admin-picture.html" class="btn btn-primary btn-block"><i class="fa fa-file-image-o"></i> Mudar imagem</a>
+  </div><!-- col -->
 
-<p><a href="#" class="btn btn-primary">Enviar uma mensagem através da <strong>Unimestre</strong></a>
+  <div class="col-sm-8">
+ 
+   <div class="panel panel-default">
+     <div class="panel-body">
+       <p><strong>Email:</strong> exemplo@ie.com.br</p>
+       <p><a href="admin-config.html" class="btn btn-primary"><i class="fa fa-pencil-square-o"></i> Mudar email</a></p>
+    </div>
+   </div>
+ 
+    <div class="panel panel-default">
+     <div class="panel-body">
+       <p><strong>Senha:</strong> ••••••••••••</p>
+       <p><a href="admin-password.html" class="btn btn-primary"><i class="fa fa-lock"></i> Mudar Senha</a></p>
+    </div>
+   </div>
+
+
+  </div><!-- col -->
+</div><!-- h-card -->
 
 
     </div><!-- main area -->
@@ -137,6 +158,9 @@
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="bower_components/jquery/dist/jquery.min.js"></script> 
+	
+	<!-- Bootestrap Validate for forms validation -->
+	<script src="bower_components/bootstrapValidator/dist/js/bootstrapValidator.min.js"></script> 
 	
 	<!-- Include all compiled plugins (below), or include individual files as needed  -->  
 	<script src="js/bootstrap.min.js"></script>
