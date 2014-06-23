@@ -5944,12 +5944,18 @@ nav .navbar-brand {
 }
 .unit .example {
   border-radius: 4px;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.7);
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  padding-top: 115px;
+  text-align: center;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 21px;
+  text-transform: uppercase;
 }
 .add-unit {
   cursor: pointer;
@@ -6006,6 +6012,9 @@ nav .navbar-brand {
   .unit {
     width: auto;
   }
+}
+.extra-info {
+  display: none;
 }
 .admin-login {
   padding-top: 0;

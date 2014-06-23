@@ -8,6 +8,7 @@
 	<!-- Bootstrap -->
 	<link href="styles/css/admin-styles.css" rel="stylesheet" media="screen">
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="bower_components/bootstrapValidator/dist/css/bootstrapValidator.min.css" rel="stylesheet" media="screen">
 
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -77,7 +78,7 @@
           <li>
             <a href="admin-units.html">
               <i class="fa fa-university fa-lg"></i>
-              <span class="text">Unidades</span>
+              <span class="text">Setores</span>
             </a>
           </li>
  
@@ -114,31 +115,34 @@
 
 
 <div class="page-header">
-  <h1>Imagem <small class="hidden-xs">Administrar da imagem da sua institução de ensino</small></h1>
+  <h1>Imagem <small class="hidden-xs">Inserir ou editar imagem da sua instituição de ensino.</small></h1>
 </div>
 
-<div class="alert alert-success"><strong>Muito bem!</strong> Você mudou a imagem.</div>
+<div class="alert alert-success"><strong>Muito bem!</strong> A imagem foi inserida corretamente.</div>
+<!-- 
+================================================================================ 
+THIAGO, se o usuario estiver mudando a imagem, o texto do alert vai ser:
+Muito bem! A imagem foi alterada corretamente.
+================================================================================ 
+-->
 
-<p>Você pode editar a imagem que vai aparecer da sua institução de ensino no outclass. Para editar seu email <a href="admin-config.html">clique aqui</a>. E para mudar sua senha <a href="admin-password.html">aquí</a>.</p>
-
+<p>Utilize a logomarca, logotipo, ou foto que melhor represente a sua instituição de ensino. A imagem selecionada irá aparecer para alunos e responsáveis no aplicativo Outclass.</p>
 
 <div class="row">
 
 <div class="col-sm-8">
 
-  <div class="alert alert-danger"><strong>Algo deu errado!</strong> Algo deu errado, preencha direito meu!</div>
+  <div class="alert alert-danger"><strong>Algo deu errado!</strong> Verifique se a imagem selecionada está em .png ou .jpg e não possua mais do que 2MB. Se o erro persistir <a href="admin-support.html">entre em contato</a>.
+</div>
 
-
-<form role="form">
-
+<form role="form" class="validateForm" enctype="multipart/form-data">
   <div class="form-group">
-    <label for="logo">Mudar a imagem da institucão de ensino</label>
-    <input type="file" id="logo">
-    <p class="help-block">Envie o logo do colegio, tem que ser um arquivo png, jpg ou gif de no máximo xxxkb.</p>
+    <label for="logo">Inserir ou alterar a imagem da instituição de ensino.</label>
+    <input type="file" id="logo" name="picture" required>
+    <p class="help-block">Selecione logo ou imagem em .jpg ou .png com no máximo 2MB.</p>
   </div><!-- form-group -->
   
-
-  <p><input type="submit" class="btn btn-success" value="Mudar a imagem"></p>
+  <p><input type="submit" class="btn btn-success" value="Enviar a imagem"></p>
 
 </form>
 
@@ -149,12 +153,13 @@
   <div class="panel panel-info">
     <div class="panel-heading">Panel de informação</div><!-- panel-heading -->
     <div class="panel-body">
-      <p>Colocar aqui info de como preencer o form e o que ele faz, onde mostra a info etc.</p>
-      <p>Tambem tem que ter FAQ rapidas e info de support.</p>
+      <p>A imagem ou foto de perfil é a representação visual da sua instituição de ensino no aplicativo Outclass e estará diretamente ligada as ações que você poderá executar utilizando a nossa ferramenta.</p>
+      <p>Dúvidas, visite o nosso suporte <a href="admin-support.html">clicando aqui</a>.</p>
     </div><!-- panel body -->
   </div><!-- panel -->
 
 </div><!-- col -->
+
 
 
 
@@ -182,6 +187,9 @@
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="bower_components/jquery/dist/jquery.min.js"></script> 
+	
+	<!-- Bootestrap Validate for forms validation -->
+	<script src="bower_components/bootstrapValidator/dist/js/bootstrapValidator.min.js"></script> 
 	
 	<!-- Include all compiled plugins (below), or include individual files as needed  -->  
 	<script src="js/bootstrap.min.js"></script>

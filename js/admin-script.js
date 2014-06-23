@@ -1,52 +1,97 @@
-
-
-
-
-
-
-
 $(document).ready(function() {
-    $('.loginForm').bootstrapValidator({
-    
+
+
+// Toggle form address ==============================================
+
+$(".toggleCheckbox").click(function() {
+  $(".extra-info").slideToggle();
+});
+
+
+// Form Validator ==============================================
+
+var $noEmail = 'Digite um email';
+var $validEmail = 'Isto não é um endereço de email';
+var $noPassword = 'Você tem que por um password';
+var $noImage = 'Você tem que escolher uma imagem';
+var $incorrectImage = 'A imagem é incorreta';
+var $noUnitName = 'Digite um nome para o setor';
+var $noPhone = 'Digite um numero de telefone';
+
+
+
+    $('.validateForm').bootstrapValidator({
+
         feedbackIcons: {
-            valid: 'glyphicon glyphicon-ok',
-            invalid: 'glyphicon glyphicon-remove',
-            validating: 'glyphicon glyphicon-refresh'
-        },//feedbackIcons
-        
-        
+          valid: 'glyphicon glyphicon-ok',
+          invalid: 'glyphicon glyphicon-remove',
+          validating: 'glyphicon glyphicon-refresh'
+        },
+                            
         fields: {
             email: {
                 validators: {
                     notEmpty: {
-                        message: 'The email address is required'
+                        message: $noEmail
                     },// notEmpty
                     emailAddress: {
-                        message: 'The input is not a valid email address'
+                        message: $validEmail
                     }// emailAddress
                 }//validators
             },//email
+
+            password: {
+                validators: {
+                    notEmpty: {
+                        message: $noPassword
+                    }// notEmpty                
+                }//validators
+            },//password
+
+            picture: {
+                validators: {
+                    notEmpty: {
+                        message: $noImage
+                    },// notEmpty
+                    file: {
+                        extension: 'jpeg,jpg,png',
+                        type: 'image/jpeg,image/jpg,image/png',
+                        maxSize: 2048 * 1024,   // 2 MB
+                        message: $incorrectImage
+                    }//file
+                }//validators
+            },//picture
+
+            unitName: {
+                validators: {
+                    notEmpty: {
+                        message: $noUnitName
+                    }// notEmpty
+                }//validators
+            },//unitName
+
+
+            phone: {
+                validators: {
+                    notEmpty: {
+                        message: $noPhone
+                    }// notEmpty
+                }//validators
+            },//phone
+
+
+
+
         },//fields
     });//bootstrapValidator
+
+
+
+
+
+
+
+
 });//document
 
 
-//
-//$('li').click(function(){
-//  
-//  $(this).addClass('active')
-//       .siblings()
-//       .removeClass('active');
-//    
-//});
-//
-/*
-
-Inspired by Asif Aleem's work: http://www.freebiesgallery.com/responsive-website-navigation/
-
-Feel free to fork it and make it better, AND use it however u want, the whole functionality could, of course, have been done with jQuery alone, but I thought I'd try to do it with CSS3, to make use of media query transitions, and of course, just to practice more.
-You can use this when changing orientation on a tablet or smart phone for example.. and of course, use ur creative minds for any more uses u can come up with :)
-
-Follow me on Twitter: http://twitter.com/SaraSoueidan
-
-*/

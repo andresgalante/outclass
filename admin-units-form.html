@@ -8,6 +8,7 @@
 	<!-- Bootstrap -->
 	<link href="styles/css/admin-styles.css" rel="stylesheet" media="screen">
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="bower_components/bootstrapValidator/dist/css/bootstrapValidator.min.css" rel="stylesheet" media="screen">
 
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -77,7 +78,7 @@
           <li class="active">
             <a href="admin-units.html">
               <i class="fa fa-university fa-lg"></i>
-              <span class="text">Unidades</span>
+              <span class="text">Setores</span>
             </a>
           </li>
  
@@ -127,53 +128,78 @@
   
   <div class="alert alert-danger"><strong>Algo deu errado!</strong> Algo deu errado, preencha direito meu!</div>
 
-  <form role="form" action="admin-units-complete.html">
+  <form role="form" class="validateForm" action="admin-units-complete.html">
   
     <div class="form-group">
-      <label for="unitUname">Nome da unidade</label>
-      <input type="text" class="form-control" id="unitUname" placeholder="Exemplo: Biblioteca, Receção ...">
+      <label for="unitName">Nome da unidade</label>
+      <input type="text" class="form-control" name="unitName" id="unitName" placeholder="Exemplo: Biblioteca, Receção ..." required>
     </div><!-- form-group -->
     
     <div class="form-group">
       <label for="unitEmail">Email</label>
-      <input type="email" class="form-control" id="unitEmail" placeholder="Email da unidade">
+      <input type="email" class="form-control" name="email" id="unitEmail" placeholder="Email da unidade" required>
     </div>
   
     <div class="form-group">
       <label for="unitPhone">Telefone</label>
-      <input type="tel" class="form-control" id="unitPhone" placeholder="Telefone da unidade">
-    </div>
+
+       <div class="row">
+         <div class="col-xs-8">
+           <input type="number" class="form-control" name="phone" id="unitPhone" placeholder="Telefone da unidade" required>
+         </div> <!--col -->
+         <div class="col-xs-4">
+           <input type="number" class="form-control" id="unitPhone" placeholder="Interno">
+         </div><!--col -->
+       </div><!-- row -->
+
+     </div><!-- form-group -->
   
+ 
+ 
     <div class="form-group">
-      <label for="unitAddress">Endereço</label>
-      
-      <div class="row">
-        <div class="col-xs-6">
-          <input type="text" class="form-control" id="unitAddress" placeholder="Nome da Rua">
-        </div> <!--col -->
-        <div class="col-xs-3">
-          <input type="text" class="form-control" id="unitAddress" placeholder="Numero">
-        </div><!--col -->
-        <div class="col-xs-3">
-          <input type="text" class="form-control" id="unitAddress" placeholder="Complemento">
-        </div><!--col -->
-      </div><!-- row -->
-    </div><!-- form-group -->
+         <div class="checkbox">
+           <label>
+             <input type="checkbox" class="toggleCheckbox" checked="checked"> É o mesmo endereço da Instituição de ensino
+           </label>
+         </div>
+     </div>
+     
+  
+   
+    <div class="extra-info">
     
+     <div class="form-group">
+       <label for="unitAddress">Endereço</label>
+       
+       <div class="row">
+         <div class="col-xs-6">
+           <input type="text" class="form-control" id="unitAddress" placeholder="Nome da Rua">
+         </div> <!--col -->
+         <div class="col-xs-3">
+           <input type="number" class="form-control" id="unitAddress" placeholder="Numero">
+         </div><!--col -->
+         <div class="col-xs-3">
+           <input type="text" class="form-control" id="unitAddress" placeholder="Complemento">
+         </div><!--col -->
+       </div><!-- row -->
+     </div><!-- form-group -->
+     
+     
+     <div class="form-group">
+       <label for="unitAddress">Estado/Cidade</label>
+       
+       <div class="row">
+         <div class="col-xs-8">
+           <input type="text" class="form-control" id="unitAddress" placeholder="Cidade">
+         </div> <!--col -->
+         
+         <div class="col-xs-4">
+           <input type="text" class="form-control" id="unitAddress" placeholder="Estado">
+         </div><!--col -->
+       </div><!-- row -->
+     </div><!-- form-group -->
     
-    <div class="form-group">
-      <label for="unitAddress">Estado/Cidade</label>
-      
-      <div class="row">
-        <div class="col-xs-8">
-          <input type="text" class="form-control" id="unitAddress" placeholder="Cidade">
-        </div> <!--col -->
-        
-        <div class="col-xs-4">
-          <input type="text" class="form-control" id="unitAddress" placeholder="Estado">
-        </div><!--col -->
-      </div><!-- row -->
-    </div><!-- form-group -->
+    </div><!-- extra info -->
   
   
     <p><input type="submit" class="btn btn-success" value="Adicionar Unidade"></p>
@@ -221,6 +247,9 @@
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="bower_components/jquery/dist/jquery.min.js"></script> 
+	
+	<!-- Bootestrap Validate for forms validation -->
+	<script src="bower_components/bootstrapValidator/dist/js/bootstrapValidator.min.js"></script> 
 	
 	<!-- Include all compiled plugins (below), or include individual files as needed  -->  
 	<script src="js/bootstrap.min.js"></script>
