@@ -8,6 +8,7 @@
 	<!-- Bootstrap -->
 	<link href="styles/css/admin-styles.css" rel="stylesheet" media="screen">
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="bower_components/bootstrapValidator/dist/css/bootstrapValidator.min.css" rel="stylesheet" media="screen">
 
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -77,7 +78,7 @@
           <li>
             <a href="admin-units.html">
               <i class="fa fa-university fa-lg"></i>
-              <span class="text">Unidades</span>
+              <span class="text">Setores</span>
             </a>
           </li>
  
@@ -112,37 +113,47 @@
 
 
 
-<div class="page-header">
-  <h1>Supporte <small class="hidden-xs">Tranquilo, a gente vai te ajudar.</small></h1>
-</div>
-
-
-<p>Qualquer duvida, problema o suggestão que você tiver <a href="#">entre em contato</a> e vamos responder o mais rápido que der. Porem se quiser antes leia as perguntas frequentes, pode ser que ache sua resposta.</p>
-
-<blockquote>
-  <p>Pode cortar cabelo?</p>
-</blockquote>
-<p>Cortar cabelo não pode.</p>
-
-<hr />
-
-<blockquote>
-  <p>Tem certeza que não pode cortar cabelo?</p>
-</blockquote>
-<p>Sim, cortar cabelo não pode.</p>
-
-
-<hr />
-
-<blockquote>
-  <p>Tem certeza que não pode cortar cabelo?</p>
-</blockquote>
-<p>Sim, cortar cabelo não pode.</p>
-
-<hr />
-
-<p><a href="#" class="btn btn-primary">Não achou a resposta? Mande um email</a>
-
+      <div class="page-header">
+        <h1>Supporte <small class="hidden-xs">Tranquilo, a gente vai te ajudar.</small></h1>
+      </div>
+      
+      <div class="alert alert-success"><strong>Muito bem!</strong> sua mensagem foi enviada, responderemos em no máximo xxhs.</div>
+      
+      <p>Qualquer duvida, problema o suggestão que você tiver entre em contato e vamos responder o mais rápido que der.</p>
+      
+      
+      <div class="row">
+      
+      <div class="col-sm-8">
+      
+      
+        <div class="alert alert-danger"><strong>Validação!</strong> Deu merda no server</div>
+      
+      <form role="form" class="validateForm">
+      
+        <div class="form-group">
+          <label for="message">Escreva sua mensagem</label>
+          <textarea class="form-control" id="message" name="message" rows="4" required></textarea> 
+        </div>
+      
+        <p><input type="submit" class="btn btn-success" value="Enviar mensagem"></p>
+      
+      </form>
+      
+      </div><!-- col -->
+      
+      <div class="col-sm-4">
+      
+        <div class="panel panel-info">
+          <div class="panel-heading">Panel de informação</div><!-- panel-heading -->
+          <div class="panel-body">
+            <p>Evite senhas de fácil dedução. Senhas com letras e números são mais recomendadas e mais seguras. 
+            <p>Problemas para mudar sua senha, <a href="admin-support.html">clique aqui</a>.</p>
+          </div><!-- panel body -->
+        </div><!-- panel -->
+      
+      </div><!-- col -->
+      
 
     </div><!-- main area -->
 
@@ -162,6 +173,9 @@
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="bower_components/jquery/dist/jquery.min.js"></script> 
+	
+	<!-- Bootestrap Validate for forms validation -->
+	<script src="bower_components/bootstrapValidator/dist/js/bootstrapValidator.min.js"></script> 
 	
 	<!-- Include all compiled plugins (below), or include individual files as needed  -->  
 	<script src="js/bootstrap.min.js"></script>

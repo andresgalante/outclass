@@ -8,6 +8,7 @@
 	<!-- Bootstrap -->
 	<link href="styles/css/admin-styles.css" rel="stylesheet" media="screen">
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="bower_components/bootstrapValidator/dist/css/bootstrapValidator.min.css" rel="stylesheet" media="screen">
 
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -77,7 +78,7 @@
           <li>
             <a href="admin-units.html">
               <i class="fa fa-university fa-lg"></i>
-              <span class="text">Unidades</span>
+              <span class="text">Setores</span>
             </a>
           </li>
  
@@ -112,27 +113,24 @@
 
 
 <div class="page-header">
-  <h1>Configurações <small class="hidden-xs">Administrar informação da conta</small></h1>
+  <h1>Configurações <small class="hidden-xs">Administrar informações da conta</small></h1>
 </div>
 
 
-
-<p>Você pode mudar seu email de contato e acesso ao admin do outclass.  Para editar a imagem que vai aparecer da sua institução de ensino no outclass <a href="admin-picture.html">clique aqui</a>. E para mudar sua senha <a href="admin-password.html">aquí</a>.</p>
+<p>Aqui você pode alterar o e-mail que dá acesso ao admin do Outclass.</p>
 
   
   <div class="row">
   
    <div class="col-sm-8">
    
-     <div class="alert alert-warning"><strong>Quase la!</strong> Um email de confirmação foi enviado a seu novo endereço. Confirme o email para finalizar a mudança.</div>
+     <div class="alert alert-warning"><strong>Quase lá!</strong> Um e-mail de confirmação foi enviado ao seu novo endereço. Vá até o seu e-mail e faça a confirmação para finalizar a mudança.</div>
    
+   <form role="form" class="validateForm">
    
-   <form role="form">
-   
-     
      <div class="form-group">
        <label for="email">Mudar o email da conta</label>
-       <input type="email" class="form-control" id="email" placeholder="Novo email">
+       <input type="email" class="form-control" name="email" id="email" placeholder="Novo email" required>
      </div>
    
    
@@ -147,14 +145,11 @@
      <div class="panel panel-info">
        <div class="panel-heading">Panel de informação</div><!-- panel-heading -->
        <div class="panel-body">
-         <p>Colocar aqui info de como preencer o form e o que ele faz, onde mostra a info etc.</p>
-         <p>Tambem tem que ter FAQ rapidas e info de support.</p>
+         <p>Apenas um e-mail possui acesso ao admin do Outclass para cada instituição e ensino. Caso mais de uma pessoa vá utilizár-lo, sugerimos que uma conta de e-mail seja criada especificamente para isso. Exemplo: <strong>outclass@seudomínio.com.br</strong>.</p>
        </div><!-- panel body -->
      </div><!-- panel -->
    
    </div><!-- col -->
-   
-   
   
   </div><!-- row-->
 
@@ -178,6 +173,9 @@
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="bower_components/jquery/dist/jquery.min.js"></script> 
+	
+	<!-- Bootestrap Validate for forms validation -->
+	<script src="bower_components/bootstrapValidator/dist/js/bootstrapValidator.min.js"></script> 
 	
 	<!-- Include all compiled plugins (below), or include individual files as needed  -->  
 	<script src="js/bootstrap.min.js"></script>
