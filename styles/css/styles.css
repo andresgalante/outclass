@@ -1,5 +1,4 @@
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Sans+Narrow:400,700|Amatic+SC:400);
-@import url(http://fonts.googleapis.com/css?family=Just+Another+Hand|Waiting+for+the+Sunrise|Shadows+Into+Light|Amatic+SC:400,700|Shadows+Into+Light+Two);
 /*!
  * Based on Bootstrap v3.0.0 
  */
@@ -5969,7 +5968,7 @@ h1 {
   }
 }
 .store-button:hover {
-  cursor: not-allowed;
+  cursor: pointer;
 }
 form {
   margin-bottom: 20px;
