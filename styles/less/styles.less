@@ -305,7 +305,7 @@ section{
 		background: url(../../img/zigzag-border-top.png) repeat-x left bottom;
 		margin:-97px 0 0em 0;
     .inner-page &{
-		  margin:-47px 0 0em 0;
+		margin:-47px 0 0em 0;
     }
 	}
 
@@ -518,6 +518,46 @@ margin-top: 20px;
 
 	
 	.twitter{		background: @color-twitter;}
+}
+
+
+
+// logos =================
+
+.logos{
+  background: #333;
+  position: relative;
+  color: #999;
+  text-shadow: 0 -1px 0 rgba(0,0,0,1);
+  padding: 60px 0;
+  h5{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  img{
+    max-width: 120px;
+    height: auto;
+  }
+  ul{
+    .list-inline;
+    li{
+      margin-right: 20px;
+//    line-height: 100px;
+//      background: red;
+    }
+  }
+  
+	&::before{
+		content: "";
+		.size(100%, 7px);
+		position: absolute;
+		display: block;
+		pointer-events: none;		
+		margin:-67px 0 0em 0;
+		background: url(../../img/zigzag-border-top-dark.png) repeat-x left bottom;
+	}
+  
+
 }
 
 
