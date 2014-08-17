@@ -89,6 +89,29 @@ function saveContactDetails($contact){
     mysql_close($conn);
 }
 
+
+function sendSupportMail($contact)
+{
+    if($GLOBALS["config"]["disable_mail"])
+    {
+        return;
+    }
+
+    $to      = $GLOBALS["config"]["report_email"];
+    $subject = 'New support request recived';
+    $message = "Email:  {$contact['email']} \r\n" .
+               "Name = {$contact['name']} \r\n" .
+               "Message = {$contact['message']} \r\n";
+
+    $headers = 'From: '.$GLOBALS['config']['webmaster_email']. "\r\n" .
+        'Reply-To: ' .$GLOBALS['config']['webmaster_email']. "\r\n" .
+        'X-Mailer: PHP/' . phpversion();
+
+    mail($to, $subject, $message, $headers);
+    return;
+}
+
+
 function redirect($filename)
 {
     header( 'Location: '.$GLOBALS["config"]["baseurl"].'/'.$filename);

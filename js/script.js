@@ -134,6 +134,40 @@ $viejo.fadeOut()
 
 jQuery(function($){
 
+    $('#supportForm').submit(function(){
+
+        var data = {}, $form = $(this);
+        $("[type=submit]", $form).attr("disabled", "disabled").addClass("disabled").after('<i class="fa-li fa fa-spinner fa-spin loader"></i>');
+
+        $("input", this).each(function(){
+            data[$(this).attr("name")] = $(this).val();
+        });
+
+        $("select", this).each(function(){
+            data[$(this).attr("name")] = $(this).val();
+        });
+
+
+        data.ajax = true;
+        $.ajax({
+            url: $(this).attr("action"),
+            type: "post",
+            data: data,
+            success: function()
+            {
+                showOk();
+                $form.slideUp().fadeOut();
+            },
+            error: function()
+            {
+                $("[type=submit]", $form).removeAttr("disabled").removeClass("disabled").text("Enviar!");
+                $(".loader").fadeOut(function(){$(this).remove()});
+                showError();
+            }
+        });
+        return false;
+    });
+
 
     $('#contactForm').submit(function(){
        var data = {}, $form = $(this);
